@@ -20,10 +20,13 @@ public class EnemyCollision : MonoBehaviour
         if (col2d.IsTouchingLayers(LayerMask.GetMask("Player")) &&
             collision.CompareTag("Projectile"))
         {
-            column.RemoveFromColumn(gameObject);
-            controller.SetDead();            
-            Destroy(collision.gameObject);   
-            destroyer.Explode();
+            if (!controller.IsDead) {
+                column.RemoveFromColumn(gameObject);
+                controller.SetDead();
+                destroyer.Explode();
+            }
+                       
+            Destroy(collision.gameObject);    
         }
     }
 }

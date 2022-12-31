@@ -605,14 +605,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien Group
       objectReference: {fileID: 0}
-    - target: {fileID: 2228137979423343142, guid: 77e529a98a12e704c94e662769152c42, type: 3}
-      propertyPath: maxShootingTime
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2228137979423343142, guid: 77e529a98a12e704c94e662769152c42, type: 3}
-      propertyPath: minShootingTime
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3931043935311772286, guid: 77e529a98a12e704c94e662769152c42, type: 3}
       propertyPath: m_RootOrder
       value: 4

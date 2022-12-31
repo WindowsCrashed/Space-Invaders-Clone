@@ -5,7 +5,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] Transform gun;
 
     SpriteController spriteController;
-    bool isDead;
+    public bool IsDead { get; private set; }
 
     public Transform Gun => gun;
 
@@ -15,12 +15,12 @@ public class EnemyController : MonoBehaviour
         GetComponentInParent<EnemyMovement>()
             .moveEvent.AddListener(() => 
             {
-                if (!isDead) spriteController.UpdateSprite(); 
+                if (!IsDead) spriteController.UpdateSprite(); 
             });
     }
 
     public void SetDead()
     {
-        isDead = true;
+        IsDead = true;
     }
 }
