@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -10,12 +11,10 @@ public class EnemyMovement : MonoBehaviour
     bool hasCollided = false;
     System.Action step;
 
-    SpriteController spriteController;
+    public readonly UnityEvent moveEvent = new();
 
     void Start()
     {
-        spriteController = GetComponent<SpriteController>();
-
         step = StepSide;
         StartCoroutine(Move());
     }
@@ -43,7 +42,7 @@ public class EnemyMovement : MonoBehaviour
         while (true)
         {
             step();
-            spriteController.UpdateSprite();
+            moveEvent.Invoke();
             yield return new WaitForSeconds(stepDelay);
         }
     }
