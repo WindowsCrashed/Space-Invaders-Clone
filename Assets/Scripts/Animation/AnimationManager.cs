@@ -10,7 +10,7 @@ public class AnimationManager : MonoBehaviour
 
     void IncrementIndex()
     {
-        currentIndex = currentIndex < animControllers.Count ? currentIndex + 1 : 0;
+        currentIndex = currentIndex < animControllers.Count - 1 ? currentIndex + 1 : 0;
     }
 
     public void SetAnimatorController(Animator anim)

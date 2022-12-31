@@ -2,8 +2,12 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] Transform gun;
+
     SpriteController spriteController;
     bool isDead;
+
+    public Transform Gun => gun;
 
     void Awake()
     {
