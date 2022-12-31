@@ -4,7 +4,7 @@ public class Projectile : MonoBehaviour
 {
     public void Explode()
     {
-        gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        GetComponent<Rigidbody2D>().Sleep();
         GetComponent<Destroyer>().Explode();
     }
 }

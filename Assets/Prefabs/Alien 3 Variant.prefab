@@ -15,6 +15,14 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -853255671981573735, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
+      propertyPath: primarySprite
+      value: 
+      objectReference: {fileID: 1894362920, guid: 47bfc4a73e9f90341bc697dbb94170a4, type: 3}
+    - target: {fileID: -853255671981573735, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
+      propertyPath: secondarySprite
+      value: 
+      objectReference: {fileID: -418813619, guid: 47bfc4a73e9f90341bc697dbb94170a4, type: 3}
     - target: {fileID: 1413209225631250094, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
       propertyPath: m_Size.x
       value: 4
