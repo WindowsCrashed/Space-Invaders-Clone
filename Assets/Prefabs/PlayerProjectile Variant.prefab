@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerProjectile Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253560, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
       propertyPath: m_RootOrder
       value: 0
