@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - Border
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
@@ -44,6 +45,9 @@ TagManager:
     locked: 0
   - name: Layout
     uniqueID: 254654413
+    locked: 0
+  - name: Enemy
+    uniqueID: 3251172753
     locked: 0
   - name: Player
     uniqueID: 3301962913
