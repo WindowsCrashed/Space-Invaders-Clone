@@ -2,8 +2,12 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] Transform gun;
+
     SpriteController spriteController;
-    bool isDead;
+    public bool IsDead { get; private set; }
+
+    public Transform Gun => gun;
 
     void Awake()
     {
@@ -11,12 +15,12 @@ public class EnemyController : MonoBehaviour
         GetComponentInParent<EnemyMovement>()
             .moveEvent.AddListener(() => 
             {
-                if (!isDead) spriteController.UpdateSprite(); 
+                if (!IsDead) spriteController.Animate("Move"); 
             });
     }
 
     public void SetDead()
     {
-        isDead = true;
+        IsDead = true;
     }
 }

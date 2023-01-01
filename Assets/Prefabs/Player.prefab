@@ -104,7 +104,7 @@ SpriteRenderer:
   m_SortingLayerID: -993004383
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -628231675, guid: 47bfc4a73e9f90341bc697dbb94170a4, type: 3}
+  m_Sprite: {fileID: -1711374528, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -209,6 +209,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gun: {fileID: 92228559}
-  projectile: {fileID: 9148173698029591573, guid: 47c4c6f625a2b404abe25cc92ce02d5b, type: 3}
+  projectile: {fileID: 8477943255530042413, guid: 8e5bcf2b7007ebc4faea3291a82aac59, type: 3}
   projectileSpeed: 60
   fireRate: 0.2

@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class Border : MonoBehaviour
+public class Ceiling : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collision)
     {
-       if (collision.TryGetComponent(out Projectile projectile))
+       if (collision.TryGetComponent(out IProjectile projectile))
         {
             projectile.Explode();
         } 

@@ -40,13 +40,7 @@ public class PlayerShooting : MonoBehaviour
     {
         while (true)
         {
-            GameObject newProjectile = Instantiate(projectile, gun.position, Quaternion.identity);
-
-            if (newProjectile.TryGetComponent(out Rigidbody2D rb))
-            {
-                rb.velocity = transform.up * projectileSpeed;
-            }
-
+            Shooter.Shoot(projectile, gun, projectileSpeed);
             yield return new WaitForSeconds(fireRate);
         }
     }

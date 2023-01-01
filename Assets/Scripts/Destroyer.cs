@@ -1,15 +1,19 @@
-using System.Collections;
 using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer spriteRenderer;
-    [SerializeField] Sprite deathSprite;
     [SerializeField] float destroyDelay;
+
+    SpriteController spriteController;
+
+    void Awake()
+    {
+        spriteController = GetComponent<SpriteController>();
+    }
 
     public void Explode()
     {
-        spriteRenderer.sprite = deathSprite;
+        spriteController.SetSprite("Death");
         Destroy(gameObject, destroyDelay);
     }
 }

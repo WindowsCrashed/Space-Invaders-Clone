@@ -1,22 +1,31 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SpriteController : MonoBehaviour
 {
-    [SerializeField] Sprite primarySprite;
-    [SerializeField] Sprite secondarySprite;
     [SerializeField] SpriteRenderer spriteRenderer;
+    [Header("")]
+    [SerializeField] List<SpriteObj> sprites;
+    [SerializeField] List<SpriteAnimation> animations;
 
-    Sprite[] sprites;
-    int currentIndex;
-
-    void Awake()
+    public void SetSprite(string name)
     {
-        sprites = new[] { primarySprite, secondarySprite };    
+        if (sprites == null) return;
+
+        SpriteObj sprite = sprites.Where(s => s.Name == name).First();
+
+        if (sprite.Position != Vector2.zero)
+        {
+            spriteRenderer.gameObject.transform.localPosition = sprite.Position;
+        }
+
+        spriteRenderer.sprite = sprite.Sprite;
     }
 
-    public void UpdateSprite()
+    public void Animate(string name)
     {
-        currentIndex = Mathf.Abs(currentIndex - 1);
-        spriteRenderer.sprite = sprites[currentIndex];
+        if (animations == null) return; 
+        spriteRenderer.sprite = animations.Where(a => a.Name == name).First().GetCurrentSprite();
     }
 }

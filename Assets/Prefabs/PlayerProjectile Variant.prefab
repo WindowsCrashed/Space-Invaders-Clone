@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6271965758217800149
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -5045529166142344603, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: -1756219851, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    - target: {fileID: 2498877502177803253, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -870439395, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    - target: {fileID: 2498877502177803253, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253560, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_Name
+      value: PlayerProjectile Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253560, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2498877503246253563, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501136855423643122, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: deathSprite
+      value: 
+      objectReference: {fileID: -1756219851, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+--- !u!1 &8477943255530042413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2498877503246253560, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+  m_PrefabInstance: {fileID: 6271965758217800149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8730856363133872521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8477943255530042413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77c732b7aff8f454e9a6c5a762c2d609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

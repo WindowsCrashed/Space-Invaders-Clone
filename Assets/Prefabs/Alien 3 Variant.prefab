@@ -15,14 +15,26 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -5275193689059760172, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
+      propertyPath: deathSprite
+      value: 
+      objectReference: {fileID: 886228079, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
     - target: {fileID: -853255671981573735, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
       propertyPath: primarySprite
       value: 
-      objectReference: {fileID: 1894362920, guid: 47bfc4a73e9f90341bc697dbb94170a4, type: 3}
+      objectReference: {fileID: 525516887, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
     - target: {fileID: -853255671981573735, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
       propertyPath: secondarySprite
       value: 
-      objectReference: {fileID: -418813619, guid: 47bfc4a73e9f90341bc697dbb94170a4, type: 3}
+      objectReference: {fileID: 984059236, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    - target: {fileID: -853255671981573735, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
+      propertyPath: animations.Array.data[0].sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 525516887, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    - target: {fileID: -853255671981573735, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
+      propertyPath: animations.Array.data[0].sprites.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 984059236, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
     - target: {fileID: 1413209225631250094, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
       propertyPath: m_Size.x
       value: 4
@@ -34,7 +46,7 @@ PrefabInstance:
     - target: {fileID: 1413209225631250094, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1894362920, guid: 47bfc4a73e9f90341bc697dbb94170a4, type: 3}
+      objectReference: {fileID: 525516887, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
     - target: {fileID: 1413209225631250094, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
