@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2498877502177803253, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2498877502177803253, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
       propertyPath: m_SortingLayerID
@@ -67,7 +67,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3501136855423643122, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: deathSprite
+      value: 
+      objectReference: {fileID: -559662334, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    m_RemovedComponents:
+    - {fileID: 8591382040996584896, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
 --- !u!1 &8785518042078664376 stripped
 GameObject:
@@ -94,3 +99,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &8785518043142983859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2498877503246253560, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+  m_PrefabInstance: {fileID: 6575719199407582539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6270891439885178478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8785518043142983859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a61b9a573e055499b7476e26d77328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
