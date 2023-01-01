@@ -15,12 +15,12 @@ public class SpriteAnimation
 
     void UpdateFrame()
     {
-        currentFrame = Mathf.Abs(currentFrame - 1);
+        currentFrame = currentFrame < Sprites.Length - 1 ? currentFrame + 1 : 0;
     }
 
     public Sprite GetCurrentSprite()
     {
-        
-        return sprites[currentFrame].Sprite;
+        UpdateFrame();
+        return Sprites[currentFrame].Sprite;
     }
 }

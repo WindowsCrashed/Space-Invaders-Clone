@@ -15,7 +15,7 @@ public class EnemyController : MonoBehaviour
         GetComponentInParent<EnemyMovement>()
             .moveEvent.AddListener(() => 
             {
-                if (!IsDead) spriteController.UpdateSprite(); 
+                if (!IsDead) spriteController.Animate("Move"); 
             });
     }
 

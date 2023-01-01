@@ -27,6 +27,14 @@ PrefabInstance:
       propertyPath: secondarySprite
       value: 
       objectReference: {fileID: 984059236, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    - target: {fileID: -853255671981573735, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
+      propertyPath: animations.Array.data[0].sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 525516887, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    - target: {fileID: -853255671981573735, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
+      propertyPath: animations.Array.data[0].sprites.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 984059236, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
     - target: {fileID: 1413209225631250094, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
       propertyPath: m_Size.x
       value: 4

@@ -20,11 +20,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 886228079, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
     - target: {fileID: -853255671981573735, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
-      propertyPath: primarySprite
+      propertyPath: animations.Array.data[0].sprites.Array.data[0].sprite
       value: 
       objectReference: {fileID: 50181523, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
     - target: {fileID: -853255671981573735, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
-      propertyPath: secondarySprite
+      propertyPath: animations.Array.data[0].sprites.Array.data[1].sprite
       value: 
       objectReference: {fileID: -292712639, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
     - target: {fileID: 1413209225631250094, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}

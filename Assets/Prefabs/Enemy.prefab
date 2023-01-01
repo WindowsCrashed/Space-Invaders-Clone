@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1043794543
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -188,9 +188,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4e82923209b1f4ea1208d0866e1e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  primarySprite: {fileID: 0}
-  secondarySprite: {fileID: 0}
   spriteRenderer: {fileID: 1413209225631250094}
+  sprites:
+  - name: Death
+    sprite: {fileID: 886228079, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+  animations:
+  - name: Move
+    sprites:
+    - name: Stage 1
+      sprite: {fileID: 0}
+    - name: Stage 2
+      sprite: {fileID: 0}
 --- !u!114 &-5015498705331486736
 MonoBehaviour:
   m_ObjectHideFlags: 0

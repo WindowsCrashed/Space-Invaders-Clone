@@ -14,9 +14,10 @@ public class SpriteController : MonoBehaviour
         spriteRenderer.sprite = sprites.Where(s => s.Name == name).First().Sprite;
     }
 
-    public void AnimateSprite(string name)
+    public void Animate(string name)
     {
-
+        if (animations == null) return; 
+        spriteRenderer.sprite = animations.Where(a => a.Name == name).First().GetCurrentSprite();
     }
 
     //[SerializeField] Sprite primarySprite;

@@ -85,9 +85,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4e82923209b1f4ea1208d0866e1e41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  primarySprite: {fileID: 950178727, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
-  secondarySprite: {fileID: -778077509, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
   spriteRenderer: {fileID: 7689753920594073518}
+  sprites:
+  - name: Burn
+    sprite: {fileID: -778077509, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+  animations: []
 --- !u!1 &7689753920594073516
 GameObject:
   m_ObjectHideFlags: 0

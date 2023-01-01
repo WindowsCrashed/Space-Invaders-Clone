@@ -13,7 +13,7 @@ public class Floor : MonoBehaviour
             if (!isBurned)
             {
                 isBurned = true;
-                GetComponent<SpriteController>().UpdateSprite();
+                GetComponent<SpriteController>().SetSprite("Burn");
             }
         }
     }
