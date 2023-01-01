@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Border : MonoBehaviour
+public class Ceiling : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collision)
     {

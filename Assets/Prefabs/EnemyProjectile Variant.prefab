@@ -7,6 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5045529166142344603, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: sprites.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: -559662334, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    - target: {fileID: -5045529166142344603, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: sprites.Array.data[0].position.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -5045529166142344603, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: sprites.Array.data[0].position.y
+      value: 2.25
+      objectReference: {fileID: 0}
     - target: {fileID: 2498877502177803253, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
       propertyPath: m_SortingLayer
       value: 3

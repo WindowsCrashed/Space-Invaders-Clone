@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Projectile : MonoBehaviour, IProjectile
+public class PlayerProjectile : MonoBehaviour, IProjectile
 {
     public void Explode()
     {

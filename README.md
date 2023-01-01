@@ -17,7 +17,7 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Enemy collision
 - [x] Enemy movement
 - [x] Enemy shooting
-- [ ] Borders and floor
+- [x] Borders and floor
 - [ ] Projectile collision
 - [ ] Player lives
 - [ ] Fonts

@@ -11,7 +11,16 @@ public class SpriteController : MonoBehaviour
 
     public void SetSprite(string name)
     {
-        spriteRenderer.sprite = sprites.Where(s => s.Name == name).First().Sprite;
+        if (sprites == null) return;
+
+        SpriteObj sprite = sprites.Where(s => s.Name == name).First();
+
+        if (sprite.Position != Vector2.zero)
+        {
+            spriteRenderer.gameObject.transform.localPosition = sprite.Position;
+        }
+
+        spriteRenderer.sprite = sprite.Sprite;
     }
 
     public void Animate(string name)
@@ -19,29 +28,4 @@ public class SpriteController : MonoBehaviour
         if (animations == null) return; 
         spriteRenderer.sprite = animations.Where(a => a.Name == name).First().GetCurrentSprite();
     }
-
-    //[SerializeField] Sprite primarySprite;
-    //[SerializeField] Sprite secondarySprite;
-    //[Header("Sec. Sprite Position (optional)")]
-    //[SerializeField] Vector2 secondarySpritePosition;
-    //[Header("")]
-    //[SerializeField] SpriteRenderer spriteRenderer;
-
-    //[Header("")]
-    //[SerializeField] List<SpriteObj> spriteObjs;
-
-    //Sprite[] sprites;
-    //int currentIndex;
-
-    //void Awake()
-    //{
-    //    sprites = new[] { primarySprite, secondarySprite };    
-    //}
-
-    //public void UpdateSprite()
-    //{
-    //    currentIndex = Mathf.Abs(currentIndex - 1);
-    //    spriteRenderer.sprite = sprites[currentIndex];
-    //    if (secondarySpritePosition != Vector2.zero) Debug.Log("Has position"); //spriteRenderer.gameObject.transform.position = secondarySpritePosition;
-    //}
 }
