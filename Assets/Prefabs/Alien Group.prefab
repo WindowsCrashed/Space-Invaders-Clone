@@ -69,7 +69,10 @@ MonoBehaviour:
   - {fileID: 8155020329745016419}
   - {fileID: 3974018462955889961}
   - {fileID: 3039784215158086799}
-  projectile: {fileID: 8785518043142983859, guid: e741df6cc702ba34cadf58d2c28ed98b, type: 3}
+  projectiles:
+  - {fileID: 8009855601024123588, guid: 91d230869a835c74fb5ed498432d291c, type: 3}
+  - {fileID: 2230613335332958724, guid: 45d375a4d5f62ee4aa48e05a1e49db6d, type: 3}
+  - {fileID: 7605875332285243924, guid: 14cee7774d0731a458931bba886add9f, type: 3}
   minShootingTime: 0.5
   maxShootingTime: 2
   projetileSpeed: 20
