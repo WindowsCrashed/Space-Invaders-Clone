@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour
 {
-    [SerializeField] EnemyColumnShooting column;
-
     BoxCollider2D col2d;
     Destroyer destroyer;
     EnemyController controller;
@@ -21,8 +19,7 @@ public class EnemyCollision : MonoBehaviour
             collision.CompareTag("Projectile"))
         {
             if (!controller.IsDead) {
-                column.RemoveFromColumn(gameObject);
-                controller.SetDead();
+                controller.Die();
                 destroyer.Explode();
             }
                        
