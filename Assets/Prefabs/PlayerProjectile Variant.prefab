@@ -8,9 +8,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -5045529166142344603, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: sprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5045529166142344603, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: sprites.Array.data[1].name
+      value: Death Midair
+      objectReference: {fileID: 0}
+    - target: {fileID: -5045529166142344603, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
       propertyPath: sprites.Array.data[0].sprite
       value: 
       objectReference: {fileID: -1756219851, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    - target: {fileID: -5045529166142344603, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: sprites.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 1089177586, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
     - target: {fileID: 2498877502177803253, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -75,6 +87,10 @@ PrefabInstance:
       propertyPath: deathSprite
       value: 
       objectReference: {fileID: -1756219851, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    - target: {fileID: 3976977594254042081, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
 --- !u!1 &8477943255530042413 stripped

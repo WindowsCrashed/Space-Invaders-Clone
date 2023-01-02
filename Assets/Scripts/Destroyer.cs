@@ -11,9 +11,9 @@ public class Destroyer : MonoBehaviour
         spriteController = GetComponent<SpriteController>();
     }
 
-    public void Explode()
+    public void Explode(string sprite = "Death")
     {
-        spriteController.SetSprite("Death");
+        spriteController.SetSprite(sprite);
         Destroy(gameObject, destroyDelay);
     }
 }

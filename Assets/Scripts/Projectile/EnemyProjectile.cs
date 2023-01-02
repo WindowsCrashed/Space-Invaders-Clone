@@ -2,10 +2,15 @@ using UnityEngine;
 
 public class EnemyProjectile : MonoBehaviour, IProjectile
 {
-    public void Explode()
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Projectile")) Explode("Death Midair");
+    }
+
+    public void Explode(string sprite = "Death")
     {
         GetComponent<Rigidbody2D>().Sleep();
         GetComponentInChildren<Animator>().enabled = false;
-        GetComponent<Destroyer>().Explode();
+        GetComponent<Destroyer>().Explode(sprite);
     }
 }
