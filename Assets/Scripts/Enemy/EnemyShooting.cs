@@ -5,15 +5,15 @@ using UnityEngine;
 public class EnemyShooting : MonoBehaviour
 {
     [SerializeField] List<EnemyColumnShooting> columns;
-    [SerializeField] GameObject projectile;
+    [SerializeField] List<GameObject> projectiles;
     [SerializeField] float minShootingTime;
     [SerializeField] float maxShootingTime;
     [SerializeField] float projetileSpeed;
 
-    public GameObject Projectile => projectile;
     public float Speed => projetileSpeed;
 
     Coroutine shootingCoroutine;
+    int currentProjectile;
 
     void Start()
     {
@@ -59,5 +59,17 @@ public class EnemyShooting : MonoBehaviour
         columns.Remove(column);
 
         if (columns.Count == 0) StopShooting();
+    }
+
+    void UpdateProjectile()
+    {
+        currentProjectile = currentProjectile < projectiles.Count - 1 ? currentProjectile + 1 : 0;
+    }
+
+    public GameObject GetCurrentProjectile()
+    {
+        GameObject proj = projectiles[currentProjectile];
+        UpdateProjectile();
+        return proj;
     }
 }

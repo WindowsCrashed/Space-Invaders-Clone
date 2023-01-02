@@ -67,6 +67,10 @@ PrefabInstance:
       propertyPath: column
       value: 
       objectReference: {fileID: 4026216891880477881}
+    - target: {fileID: 4904097599656921089, guid: d4b9447135d9f764f99aa9915f5b0ff7, type: 3}
+      propertyPath: column
+      value: 
+      objectReference: {fileID: 4026216891880477881}
     - target: {fileID: 7923870261156984276, guid: d4b9447135d9f764f99aa9915f5b0ff7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -140,6 +144,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7717261525555997836}
     m_Modifications:
+    - target: {fileID: 486007610177796566, guid: 04ce917be5448d84587b9bfb54b39f7f, type: 3}
+      propertyPath: column
+      value: 
+      objectReference: {fileID: 4026216891880477881}
     - target: {fileID: 3406763752327349251, guid: 04ce917be5448d84587b9bfb54b39f7f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -269,6 +277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien 3 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8761365584356065463, guid: 1abe2c781b7252a4cad9c8493f42d106, type: 3}
+      propertyPath: column
+      value: 
+      objectReference: {fileID: 4026216891880477881}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1abe2c781b7252a4cad9c8493f42d106, type: 3}
 --- !u!114 &5521930706175055357 stripped
@@ -294,6 +306,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7717261525555997836}
     m_Modifications:
+    - target: {fileID: 486007610177796566, guid: 04ce917be5448d84587b9bfb54b39f7f, type: 3}
+      propertyPath: column
+      value: 
+      objectReference: {fileID: 4026216891880477881}
     - target: {fileID: 3406763752327349251, guid: 04ce917be5448d84587b9bfb54b39f7f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -372,6 +388,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 7717261525555997836}
     m_Modifications:
     - target: {fileID: 3116804130339611951, guid: d4b9447135d9f764f99aa9915f5b0ff7, type: 3}
+      propertyPath: column
+      value: 
+      objectReference: {fileID: 4026216891880477881}
+    - target: {fileID: 4904097599656921089, guid: d4b9447135d9f764f99aa9915f5b0ff7, type: 3}
       propertyPath: column
       value: 
       objectReference: {fileID: 4026216891880477881}

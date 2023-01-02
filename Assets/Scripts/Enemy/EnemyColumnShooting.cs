@@ -11,7 +11,7 @@ public class EnemyColumnShooting : MonoBehaviour
 
     public void Shoot()
     {
-        Shooter.Shoot(enemyShooting.Projectile, enemies[0].Gun, enemyShooting.Speed, true);
+        Shooter.Shoot(enemyShooting.GetCurrentProjectile(), enemies[0].Gun, enemyShooting.Speed);
     }
 
     public void RemoveFromColumn(GameObject enemy)

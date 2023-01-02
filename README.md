@@ -18,12 +18,13 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Enemy movement
 - [x] Enemy shooting
 - [x] Borders and floor
-- [ ] Projectile collision
-- [ ] Player lives
+- [x] Projectile collision
+- [x] Player lives
 - [ ] Fonts
 - [ ] Score
 - [ ] Bonus enemy
 - [ ] Game Over
+- [ ] Enemy movement gradual speed up
 - [ ] Menu
 - [ ] Sound
 - [ ] Credits

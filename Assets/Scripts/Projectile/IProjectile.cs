@@ -1,4 +1,4 @@
 public interface IProjectile
 {
-    void Explode();
+    void Explode(string sprite = "Death");
 }

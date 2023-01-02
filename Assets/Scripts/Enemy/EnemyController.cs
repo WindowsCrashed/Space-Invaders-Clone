@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] EnemyColumnShooting column;
     [SerializeField] Transform gun;
 
     SpriteController spriteController;
@@ -12,15 +13,20 @@ public class EnemyController : MonoBehaviour
     void Awake()
     {
         spriteController = GetComponent<SpriteController>();
-        GetComponentInParent<EnemyMovement>()
-            .moveEvent.AddListener(() => 
+        EnemyMovement.MoveEvent.AddListener(() => 
             {
                 if (!IsDead) spriteController.Animate("Move"); 
             });
     }
 
-    public void SetDead()
+    void SetDead()
     {
         IsDead = true;
+    }
+
+    public void Die()
+    {
+        column.RemoveFromColumn(gameObject);
+        SetDead();
     }
 }

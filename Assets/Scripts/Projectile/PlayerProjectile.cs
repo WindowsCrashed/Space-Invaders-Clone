@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class PlayerProjectile : MonoBehaviour, IProjectile
 {
-    public void Explode()
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Projectile")) Explode("Death Midair");
+    }
+
+    public void Explode(string sprite = "Death")
     {
         GetComponent<Rigidbody2D>().Sleep();
         GetComponent<Destroyer>().Explode();
