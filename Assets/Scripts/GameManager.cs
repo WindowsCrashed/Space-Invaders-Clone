@@ -1,22 +1,32 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] GameObject player;
     [SerializeField] float playerResetDelay;
+    [SerializeField] int playerLives;
+
+    public int PlayerLives => playerLives;
+
+    public static readonly UnityEvent TakeLifeEvent = new();
 
     void Start()
     {
-        PlayerController.DieEvent.AddListener(() => ResetAfterPlayerDeath());    
+        TakeLifeEvent.AddListener(TakeLife);
+        PlayerController.DieEvent.AddListener(ResetAfterPlayerDeath);    
     }
 
     IEnumerator ResetAfterPlayerDeathCoroutine()
     {
         FreezeGame();
         yield return new WaitForSecondsRealtime(playerResetDelay);
-        LoadGame();
+
+        GameOver(); // Temp
+        
+        SpawnPlayer();
         UnfreezeGame();
     }
 
@@ -30,12 +40,27 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
-    public static void FreezeGame()
+    void SpawnPlayer()
+    {
+        Instantiate(player);
+    }
+
+    void TakeLife()
+    {
+        if (playerLives > 0) playerLives--;
+    }
+
+    void GameOver() // Temp
+    {
+        if (playerLives == 0) LoadGame();
+    }
+
+    void FreezeGame()
     {
         Time.timeScale = 0;
     }
 
-    public static void UnfreezeGame()
+    void UnfreezeGame()
     {
         Time.timeScale = 1;
     }

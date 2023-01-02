@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -12,21 +13,22 @@ public class Destroyer : MonoBehaviour
         spriteController = GetComponent<SpriteController>();
     }
 
-    IEnumerator ExplosionCoroutine(string sprite)
+    IEnumerator ExplosionCoroutine(string sprite, Action next)
     {
         if (spriteController != null) spriteController.SetSprite(sprite);
         yield return new WaitForSecondsRealtime(destroyDelay);
         Destroy(gameObject);
+        next?.Invoke();
     }
 
     public void Explode(string sprite = "Death")
     {
         if (spriteController != null) spriteController.SetSprite(sprite);
-        Destroy(gameObject, destroyDelay);
+        Destroy(gameObject, destroyDelay);        
     }
 
-    public void ExplodeAsync(string sprite = "Death")
+    public void ExplodeAsync(string sprite = "Death", Action next = null)
     {
-        StartCoroutine(ExplosionCoroutine(sprite));
+        StartCoroutine(ExplosionCoroutine(sprite, next));
     }
 }

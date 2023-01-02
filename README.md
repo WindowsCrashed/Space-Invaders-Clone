@@ -19,7 +19,7 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Enemy shooting
 - [x] Borders and floor
 - [x] Projectile collision
-- [ ] Player lives
+- [x] Player lives
 - [ ] Fonts
 - [ ] Score
 - [ ] Bonus enemy

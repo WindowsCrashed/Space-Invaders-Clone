@@ -5,9 +5,18 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] Animator animator;
 
+    PlayerMovement playerMovement;
+    PlayerShooting playerShooting;
+
     public static readonly UnityEvent DieEvent = new();
 
     public bool IsDead { get; private set; }
+
+    void Awake()
+    {
+        playerMovement = GetComponent<PlayerMovement>();
+        playerShooting = GetComponent<PlayerShooting>();
+    }
 
     void SetDead()
     {
@@ -19,10 +28,16 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isDead", true);
     }
 
+    void DisableControls()
+    {
+        playerMovement.enabled = false;
+        playerShooting.enabled = false;
+    }
+
     public void Die()
     {
         SetDead();
-        GetComponent<PlayerMovement>().enabled = false;
+        DisableControls();
         PlayDeathAnimation();
         DieEvent.Invoke();
     }
