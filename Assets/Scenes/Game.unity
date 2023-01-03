@@ -155,7 +155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1658594881
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -508,30 +508,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1571222679}
-    - target: {fileID: 1104299943530863830, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1104299943530863830, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1104299943530863830, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1104299944555878213, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1104299944555878213, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1104299944555878213, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
 --- !u!1001 &1700309449495927809

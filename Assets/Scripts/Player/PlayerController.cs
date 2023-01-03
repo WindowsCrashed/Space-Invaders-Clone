@@ -4,19 +4,12 @@ using UnityEngine.Events;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] Animator animator;
-
-    PlayerMovement playerMovement;
-    PlayerShooting playerShooting;
+    [SerializeField] PlayerMovement playerMovement;
+    [SerializeField] PlayerShooting playerShooting;
 
     public static readonly UnityEvent DieEvent = new();
 
     public bool IsDead { get; private set; }
-
-    void Awake()
-    {
-        playerMovement = GetComponent<PlayerMovement>();
-        playerShooting = GetComponent<PlayerShooting>();
-    }
 
     void SetDead()
     {

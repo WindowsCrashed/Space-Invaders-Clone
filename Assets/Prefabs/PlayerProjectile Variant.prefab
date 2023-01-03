@@ -87,12 +87,27 @@ PrefabInstance:
       propertyPath: deathSprite
       value: 
       objectReference: {fileID: -1756219851, guid: 96f04c80cc7f8c44798806ce3d44eac4, type: 3}
+    - target: {fileID: 3501136855423643122, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+      propertyPath: spriteController
+      value: 
+      objectReference: {fileID: 7994120600455625648}
     - target: {fileID: 3976977594254042081, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+--- !u!114 &7994120600455625648 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -5045529166142344603, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}
+  m_PrefabInstance: {fileID: 6271965758217800149}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8477943255530042413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4e82923209b1f4ea1208d0866e1e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8477943255530042413 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2498877503246253560, guid: ce0b07741fedc774685e3ede8e6a1ae3, type: 3}

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     public static readonly UnityEvent TakeLifeEvent = new();
 
-    void Start()
+    void Awake()
     {
         TakeLifeEvent.AddListener(TakeLife);
         PlayerController.DieEvent.AddListener(ResetAfterPlayerDeath);    
