@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7770728808942551225, guid: e741df6cc702ba34cadf58d2c28ed98b, type: 3}
+      propertyPath: spriteController
+      value: 
+      objectReference: {fileID: 406411586564423065}
     - target: {fileID: 7999473954286829834, guid: e741df6cc702ba34cadf58d2c28ed98b, type: 3}
       propertyPath: m_Controller
       value: 
@@ -57,7 +61,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8785518043142983859, guid: e741df6cc702ba34cadf58d2c28ed98b, type: 3}
       propertyPath: m_Name
-      value: EnemyProjectile 2
+      value: EnemyProjectile 2 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e741df6cc702ba34cadf58d2c28ed98b, type: 3}
+--- !u!114 &406411586564423065 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7114289042963947310, guid: e741df6cc702ba34cadf58d2c28ed98b, type: 3}
+  m_PrefabInstance: {fileID: 7428921911424819895}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4e82923209b1f4ea1208d0866e1e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

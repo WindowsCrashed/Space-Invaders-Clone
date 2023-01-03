@@ -20,7 +20,7 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Borders and floor
 - [x] Projectile collision
 - [x] Player lives
-- [ ] Fonts
+- [x] Fonts
 - [ ] Score
 - [ ] Bonus enemy
 - [ ] Game Over
@@ -30,3 +30,4 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [ ] Credits
 - [ ] Barriers
 - [ ] Screen/camera adjustments for different devices
+- [ ] (Optional) Typewriter, colors...

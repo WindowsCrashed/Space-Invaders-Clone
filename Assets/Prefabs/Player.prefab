@@ -275,6 +275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c45bb93f01b104498a0b70f76f9fd32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collider2d: {fileID: 52772872}
+  destroyer: {fileID: 52772873}
+  controller: {fileID: 52772874}
 --- !u!114 &52772873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,3 +304,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1077840661}
+  playerMovement: {fileID: 597630013488382593}
+  playerShooting: {fileID: 597630013488382596}

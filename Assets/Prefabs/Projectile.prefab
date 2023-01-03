@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyDelay: 0.2
+  spriteController: {fileID: -5045529166142344603}
 --- !u!114 &-5045529166142344603
 MonoBehaviour:
   m_ObjectHideFlags: 0

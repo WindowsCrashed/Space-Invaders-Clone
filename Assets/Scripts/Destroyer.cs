@@ -5,13 +5,7 @@ using UnityEngine;
 public class Destroyer : MonoBehaviour
 {
     [SerializeField] float destroyDelay;
-
-    SpriteController spriteController;
-
-    void Awake()
-    {
-        spriteController = GetComponent<SpriteController>();
-    }
+    [SerializeField] SpriteController spriteController;
 
     IEnumerator ExplosionCoroutine(string sprite, Action next)
     {
