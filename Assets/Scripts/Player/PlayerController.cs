@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] PlayerMovement playerMovement;
     [SerializeField] PlayerShooting playerShooting;
 
-    public static readonly UnityEvent DieEvent = new();
+    public static readonly UnityEvent OnDie = new();
 
     public bool IsDead { get; private set; }
 
@@ -32,6 +32,6 @@ public class PlayerController : MonoBehaviour
         SetDead();
         DisableControls();
         PlayDeathAnimation();
-        DieEvent.Invoke();
+        OnDie.Invoke();
     }
 }

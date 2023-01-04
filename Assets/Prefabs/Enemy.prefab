@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 6136885252346450654}
   - component: {fileID: -853255671981573735}
   - component: {fileID: -5015498705331486736}
+  - component: {fileID: 1563137798888679569}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -218,6 +219,20 @@ MonoBehaviour:
   column: {fileID: 0}
   gun: {fileID: 1700776968002425319}
   spriteController: {fileID: -853255671981573735}
+  score: {fileID: 1563137798888679569}
+--- !u!114 &1563137798888679569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413209226060644906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ef10d710179f7741a0d693d5ffafbeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
 --- !u!1 &5601828931982370358
 GameObject:
   m_ObjectHideFlags: 0

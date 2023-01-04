@@ -9,7 +9,7 @@ public class UILifeController : MonoBehaviour
 
     void Start()
     {
-        GameManager.TakeLifeEvent.AddListener(TakeLife);    
+        GameManager.OnTakeLife.AddListener(TakeLife);    
     }
 
     void TakeLife()

@@ -11,12 +11,12 @@ public class GameManager : MonoBehaviour
 
     public int PlayerLives => playerLives;
 
-    public static readonly UnityEvent TakeLifeEvent = new();
+    public static readonly UnityEvent OnTakeLife = new();
 
     void Awake()
     {
-        TakeLifeEvent.AddListener(TakeLife);
-        PlayerController.DieEvent.AddListener(ResetAfterPlayerDeath);    
+        OnTakeLife.AddListener(TakeLife);
+        PlayerController.OnDie.AddListener(ResetAfterPlayerDeath);    
     }
 
     IEnumerator ResetAfterPlayerDeathCoroutine()
