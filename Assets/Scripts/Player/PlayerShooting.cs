@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -20,7 +19,7 @@ public class PlayerShooting : MonoBehaviour
 
     void OnFire(InputValue value)
     {
-        ToogleFiring();
+        ToogleFiring(value.isPressed);
     }
 
     void Fire()
@@ -45,8 +44,8 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 
-    void ToogleFiring()
+    void ToogleFiring(bool value)
     {
-        isFiring = !isFiring;
+        isFiring = value;
     }
 }

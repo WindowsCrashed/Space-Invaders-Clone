@@ -91,6 +91,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien 1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1563137798888679569, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
+      propertyPath: points
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1700776968002425319, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
       propertyPath: m_LocalScale.z
       value: 0

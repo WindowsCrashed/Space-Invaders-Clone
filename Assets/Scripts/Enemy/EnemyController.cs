@@ -1,17 +1,19 @@
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour, IEnemyController
 {
     [SerializeField] EnemyColumnShooting column;
     [SerializeField] Transform gun;
     [SerializeField] SpriteController spriteController;
+    [SerializeField] Score score;
+
     public bool IsDead { get; private set; }
 
     public Transform Gun => gun;
 
     void Awake()
     {
-        EnemyMovement.MoveEvent.AddListener(() => 
+        EnemyMovement.OnMove.AddListener(() => 
             {
                 if (!IsDead) spriteController.Animate("Move"); 
             });
@@ -26,5 +28,6 @@ public class EnemyController : MonoBehaviour
     {
         column.RemoveFromColumn(gameObject);
         SetDead();
+        score.ScorePoints();
     }
 }

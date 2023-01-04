@@ -99,5 +99,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alien 3 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1563137798888679569, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}
+      propertyPath: points
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72390d4a4af838c48957392b7c45bdec, type: 3}

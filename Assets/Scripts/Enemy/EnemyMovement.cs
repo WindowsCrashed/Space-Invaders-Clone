@@ -11,7 +11,7 @@ public class EnemyMovement : MonoBehaviour
     bool hasCollided = false;
     System.Action step;
 
-    public static readonly UnityEvent MoveEvent = new();
+    public static readonly UnityEvent OnMove = new();
 
     void Start()
     {
@@ -42,7 +42,7 @@ public class EnemyMovement : MonoBehaviour
         while (true)
         {
             step();
-            MoveEvent.Invoke();
+            OnMove.Invoke();
             yield return new WaitForSeconds(stepDelay);
         }
     }

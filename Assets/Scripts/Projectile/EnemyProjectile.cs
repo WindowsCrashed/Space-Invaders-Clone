@@ -10,6 +10,7 @@ public class EnemyProjectile : MonoBehaviour, IProjectile
     public void Explode(string sprite = "Death")
     {
         GetComponent<Rigidbody2D>().Sleep();
+        GetComponent<BoxCollider2D>().enabled = false;
         GetComponentInChildren<Animator>().enabled = false;
         GetComponent<Destroyer>().Explode(sprite);
     }
