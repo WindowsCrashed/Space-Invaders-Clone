@@ -22,7 +22,7 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Player lives
 - [x] Fonts
 - [x] Basic Score System
-- [ ] Bonus enemy
+- [x] Bonus enemy
 - [ ] Game Over
 - [ ] Hi-score
 - [ ] Enemy movement gradual speed up

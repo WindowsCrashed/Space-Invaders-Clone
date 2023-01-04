@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour, IEnemyController
 {
     [SerializeField] EnemyColumnShooting column;
     [SerializeField] Transform gun;

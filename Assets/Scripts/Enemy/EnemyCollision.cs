@@ -4,7 +4,13 @@ public class EnemyCollision : MonoBehaviour
 {
     [SerializeField] BoxCollider2D collider2d;
     [SerializeField] Destroyer destroyer;
-    [SerializeField] EnemyController controller;
+    
+    IEnemyController controller;
+
+    void Awake()
+    {
+        controller = GetComponent<IEnemyController>();
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
