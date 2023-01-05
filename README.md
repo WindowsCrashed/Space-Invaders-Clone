@@ -23,12 +23,13 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Fonts
 - [x] Basic Score System
 - [x] Bonus enemy
-- [ ] Game Over
-- [ ] Hi-score
+- [x] Typewriter
+- [x] Game Over
+- [x] Hi-score
 - [ ] Enemy movement gradual speed up
 - [ ] Menu
 - [ ] Sound
 - [ ] Credits
 - [ ] Barriers
 - [ ] Screen/camera adjustments for different devices
-- [ ] (Optional) Typewriter, colors, multiplayer...
+- [ ] (Optional) Colors, multiplayer...

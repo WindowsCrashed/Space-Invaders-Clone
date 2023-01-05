@@ -10,12 +10,21 @@ public class ScoreKeeper : MonoBehaviour
     readonly int maxScore = 9999;
 
     public static UnityEvent OnUpdateScore = new();
+    public static UnityEvent OnUpdateHiScore = new();
 
     public int Score => score;
+    public int HiScore => hiscore;
 
     void Awake()
     {
-        SingletonManager.ManageSingleton(this);    
+        SingletonManager.ManageSingleton(this);
+        GameManager.OnGameOver.AddListener(SetHiScore);
+    }
+
+    void SetHiScore()
+    {
+        if (score > hiscore) hiscore = score;
+        OnUpdateHiScore.Invoke();
     }
 
     public void IncrementScore(int points)
