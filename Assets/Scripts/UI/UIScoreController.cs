@@ -12,12 +12,21 @@ public class UIScoreController : MonoBehaviour
     void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
-        ScoreKeeper.OnUpdateScore.AddListener(UpdateScore);
-        UpdateScore();
+        
+        ScoreKeeper.OnUpdateScore.AddListener(() => UpdateScore(score1, scoreKeeper.Score));
+        ScoreKeeper.OnUpdateHiScore.AddListener(() => UpdateScore(hiscore, scoreKeeper.HiScore));
+        GameManager.OnGameStart.AddListener(ClearScore);
     }
 
-    public void UpdateScore()
+    void UpdateScore(TMP_Text label, int score)
     {
-        score1.text = scoreKeeper.Score.ToString().PadLeft(4, '0');
+        label.text = score.ToString().PadLeft(4, '0');
+    }
+
+    void ClearScore()
+    {
+        scoreKeeper.ResetScore();
+        UpdateScore(score1, scoreKeeper.Score);
+        UpdateScore(hiscore, scoreKeeper.HiScore);
     }
 }
