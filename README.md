@@ -26,7 +26,8 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Typewriter
 - [x] Game Over
 - [x] Hi-score
-- [ ] Enemy movement gradual speed up
+- [x] Enemy movement gradual speed up
+- [ ] Game Won
 - [ ] Menu
 - [ ] Sound
 - [ ] Credits

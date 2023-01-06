@@ -11,6 +11,7 @@ public class EnemyShooting : MonoBehaviour
     [SerializeField] float projetileSpeed;
 
     public float Speed => projetileSpeed;
+    public List<EnemyColumnShooting> Columns => columns;
 
     Coroutine shootingCoroutine;
     int currentProjectile;

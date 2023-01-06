@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2228137979423343142}
   - component: {fileID: 946948358}
   - component: {fileID: 946948357}
+  - component: {fileID: 5483605106609520815}
   m_Layer: 0
   m_Name: Alien Group
   m_TagString: Untagged
@@ -112,6 +113,23 @@ MonoBehaviour:
   stepX: 0.5
   stepY: 2
   stepDelay: 0.5
+  speedController: {fileID: 5483605106609520815}
+--- !u!114 &5483605106609520815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114796967522016281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d6e92f50408b54d8767e3fa6f8e138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyShooting: {fileID: 2228137979423343142}
+  enemyMovement: {fileID: 946948357}
+  stepDelay: 0.5
+  minStepDelay: 0.01
 --- !u!1001 &70212969780408720
 PrefabInstance:
   m_ObjectHideFlags: 0

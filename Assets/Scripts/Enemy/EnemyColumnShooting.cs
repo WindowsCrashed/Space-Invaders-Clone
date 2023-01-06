@@ -7,7 +7,10 @@ public class EnemyColumnShooting : MonoBehaviour
     [SerializeField] List<EnemyController> enemies;
     [SerializeField] EnemyShooting enemyShooting;
 
+    public List<EnemyController> Enemies => enemies;
+
     public readonly UnityEvent OnEmptyColumn = new();
+    public static readonly UnityEvent OnEnemyRemoved = new();
 
     public void Shoot()
     {
@@ -17,6 +20,7 @@ public class EnemyColumnShooting : MonoBehaviour
     public void RemoveFromColumn(GameObject enemy)
     {
         enemies.Remove(enemy.GetComponent<EnemyController>());
+        OnEnemyRemoved.Invoke();
 
         if (enemies.Count == 0) OnEmptyColumn.Invoke();
     }
