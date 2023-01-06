@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class EnemySpeedController : MonoBehaviour
 {
-    [SerializeField] EnemyShooting enemyShooting;
-    [SerializeField] EnemyMovement enemyMovement;
+    [SerializeField] EnemyGroup enemyGroup;
     [SerializeField] float stepDelay;
     [SerializeField] float minStepDelay;
 
@@ -11,19 +10,16 @@ public class EnemySpeedController : MonoBehaviour
 
     void Start()
     {
-        EnemyColumnShooting.OnEnemyRemoved.AddListener(ControlSpeed);    
+        EnemyColumn.OnEnemyRemoved.AddListener(ControlSpeed);    
     }
 
     int CountEnemies()
     {
         int counter = 0;
 
-        foreach (EnemyColumnShooting column in enemyShooting.Columns)
+        foreach (EnemyColumn column in enemyGroup.Columns)
         {
-            foreach (EnemyController enemy in column.Enemies)
-            {
-                counter++;
-            }
+            counter += column.Enemies.Count;
         }
 
         return counter;
