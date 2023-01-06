@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour, IEnemyController
 {
-    [SerializeField] EnemyColumnShooting column;
+    [SerializeField] EnemyColumn column;
     [SerializeField] Transform gun;
     [SerializeField] SpriteController spriteController;
     [SerializeField] Score score;
@@ -26,7 +26,7 @@ public class EnemyController : MonoBehaviour, IEnemyController
 
     public void Die()
     {
-        column.RemoveFromColumn(gameObject);
+        column.RemoveFromColumn(this);
         SetDead();
         score.ScorePoints();
     }

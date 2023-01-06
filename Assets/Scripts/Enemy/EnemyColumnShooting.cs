@@ -1,23 +1,12 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class EnemyColumnShooting : MonoBehaviour
 {
-    [SerializeField] List<EnemyController> enemies;
     [SerializeField] EnemyShooting enemyShooting;
-
-    public readonly UnityEvent OnEmptyColumn = new();
+    [SerializeField] EnemyColumn column;
 
     public void Shoot()
     {
-        Shooter.Shoot(enemyShooting.GetCurrentProjectile(), enemies[0].Gun, enemyShooting.Speed);
-    }
-
-    public void RemoveFromColumn(GameObject enemy)
-    {
-        enemies.Remove(enemy.GetComponent<EnemyController>());
-
-        if (enemies.Count == 0) OnEmptyColumn.Invoke();
+        Shooter.Shoot(enemyShooting.GetCurrentProjectile(), column.Enemies[0].Gun, enemyShooting.Speed);
     }
 }

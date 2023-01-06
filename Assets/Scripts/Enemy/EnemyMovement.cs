@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float stepX;
     [SerializeField] float stepY;
-    [SerializeField] float stepDelay;
+    [SerializeField] EnemySpeedController speedController;
 
     bool hasCollided = false;
     System.Action step;
@@ -37,13 +37,13 @@ public class EnemyMovement : MonoBehaviour
 
     IEnumerator Move()
     {
-        yield return new WaitForSeconds(stepDelay);
+        yield return new WaitForSeconds(speedController.StepDelay);
 
         while (true)
         {
             step();
             OnMove.Invoke();
-            yield return new WaitForSeconds(stepDelay);
+            yield return new WaitForSeconds(speedController.StepDelay);
         }
     }
 

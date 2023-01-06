@@ -13,11 +13,15 @@ public class GameManager : MonoBehaviour
     public static readonly UnityEvent OnPlayerDestroyed = new();
     public static readonly UnityEvent OnGameOver = new();
     public static readonly UnityEvent OnGameStart = new();
+    
+    public static readonly UnityEvent OnGameWin = new(); // Temp
 
     void Awake()
     {
         PlayerController.OnDie.AddListener(Respawn);
         OnGameOver.AddListener(GameOver);
+        
+        OnGameWin.AddListener(Win); // Temp
     }
 
     void Start()
@@ -54,6 +58,13 @@ public class GameManager : MonoBehaviour
     {
         StopCoroutine(respawnCoroutine);
         respawnCoroutine = null;
+        StartCoroutine(RestartGameCoroutine());
+    }
+
+    // Temp
+    void Win()
+    {
+        TimeScaleController.FreezeGame();
         StartCoroutine(RestartGameCoroutine());
     }
 }

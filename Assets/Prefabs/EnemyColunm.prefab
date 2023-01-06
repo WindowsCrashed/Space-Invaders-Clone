@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7717261525555997836}
   - component: {fileID: 4026216891880477881}
+  - component: {fileID: 3504629452131684378}
   m_Layer: 0
   m_Name: EnemyColunm
   m_TagString: Untagged
@@ -49,13 +50,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cadc04045b40f641b9a872335b53e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyShooting: {fileID: 2228137979423343142, guid: 77e529a98a12e704c94e662769152c42, type: 3}
+  column: {fileID: 3504629452131684378}
+--- !u!114 &3504629452131684378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5609978978470487200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b0e83f46d5e72438383497a0b17e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   enemies:
   - {fileID: 853827341848774011}
   - {fileID: 5045030356233310401}
   - {fileID: 5633297359012802043}
   - {fileID: 2858222097156249882}
   - {fileID: 5521930706175055357}
-  enemyShooting: {fileID: 2228137979423343142, guid: 77e529a98a12e704c94e662769152c42, type: 3}
+  shooter: {fileID: 4026216891880477881}
 --- !u!1001 &730608783553668602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70,7 +85,7 @@ PrefabInstance:
     - target: {fileID: 4904097599656921089, guid: d4b9447135d9f764f99aa9915f5b0ff7, type: 3}
       propertyPath: column
       value: 
-      objectReference: {fileID: 4026216891880477881}
+      objectReference: {fileID: 3504629452131684378}
     - target: {fileID: 7923870261156984276, guid: d4b9447135d9f764f99aa9915f5b0ff7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -147,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 486007610177796566, guid: 04ce917be5448d84587b9bfb54b39f7f, type: 3}
       propertyPath: column
       value: 
-      objectReference: {fileID: 4026216891880477881}
+      objectReference: {fileID: 3504629452131684378}
     - target: {fileID: 3406763752327349251, guid: 04ce917be5448d84587b9bfb54b39f7f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -280,7 +295,7 @@ PrefabInstance:
     - target: {fileID: 8761365584356065463, guid: 1abe2c781b7252a4cad9c8493f42d106, type: 3}
       propertyPath: column
       value: 
-      objectReference: {fileID: 4026216891880477881}
+      objectReference: {fileID: 3504629452131684378}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1abe2c781b7252a4cad9c8493f42d106, type: 3}
 --- !u!114 &5521930706175055357 stripped
@@ -309,7 +324,7 @@ PrefabInstance:
     - target: {fileID: 486007610177796566, guid: 04ce917be5448d84587b9bfb54b39f7f, type: 3}
       propertyPath: column
       value: 
-      objectReference: {fileID: 4026216891880477881}
+      objectReference: {fileID: 3504629452131684378}
     - target: {fileID: 3406763752327349251, guid: 04ce917be5448d84587b9bfb54b39f7f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -394,7 +409,7 @@ PrefabInstance:
     - target: {fileID: 4904097599656921089, guid: d4b9447135d9f764f99aa9915f5b0ff7, type: 3}
       propertyPath: column
       value: 
-      objectReference: {fileID: 4026216891880477881}
+      objectReference: {fileID: 3504629452131684378}
     - target: {fileID: 7923870261156984276, guid: d4b9447135d9f764f99aa9915f5b0ff7, type: 3}
       propertyPath: m_RootOrder
       value: 3
