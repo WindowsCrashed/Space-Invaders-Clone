@@ -27,7 +27,7 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Game Over
 - [x] Hi-score
 - [x] Enemy movement gradual speed up
-- [ ] Game Won
+- [x] Game Won / Continue playing
 - [ ] Menu
 - [ ] Sound
 - [ ] Credits

@@ -11,4 +11,18 @@ public class EnemyGroup : MonoBehaviour
     {
         columns.Remove(column);
     }
+
+    public int CountEnemies()
+    {
+        int counter = 0;
+
+        foreach (EnemyColumn column in Columns)
+        {
+            counter += column.Enemies.Count;
+        }
+
+        if (counter == 0) GameManager.OnGameWon.Invoke();
+
+        return counter;
+    }
 }
