@@ -28,6 +28,7 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Hi-score
 - [x] Enemy movement gradual speed up
 - [x] Game Won / Continue playing
+- [x] Increase enemy fire rate after Game Won
 - [ ] Menu
 - [ ] Sound
 - [ ] Credits
