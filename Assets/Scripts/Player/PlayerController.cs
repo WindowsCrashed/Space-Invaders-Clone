@@ -11,6 +11,11 @@ public class PlayerController : MonoBehaviour
 
     public bool IsDead { get; private set; }
 
+    void Awake()
+    {
+        GameManager.OnGameWon.AddListener(DisableControls);    
+    }
+
     void SetDead()
     {
         IsDead = true;

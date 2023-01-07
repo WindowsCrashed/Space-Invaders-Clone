@@ -7,21 +7,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] float playerRespawnDelay;
     [SerializeField] float gameOverDelay;
+    [SerializeField] Spawner spawner;
 
     Coroutine respawnCoroutine;
 
     public static readonly UnityEvent OnPlayerDestroyed = new();
     public static readonly UnityEvent OnGameOver = new();
     public static readonly UnityEvent OnGameStart = new();
-    
-    public static readonly UnityEvent OnGameWin = new(); // Temp
+    public static readonly UnityEvent OnGameWon = new();
 
     void Awake()
     {
         PlayerController.OnDie.AddListener(Respawn);
         OnGameOver.AddListener(GameOver);
-        
-        OnGameWin.AddListener(Win); // Temp
+        OnGameWon.AddListener(GameWon);
     }
 
     void Start()
@@ -33,7 +32,7 @@ public class GameManager : MonoBehaviour
     {
         TimeScaleController.FreezeGame();
         yield return new WaitForSecondsRealtime(playerRespawnDelay);
-        SpawnPlayer();
+        spawner.SpawnPlayer();
         TimeScaleController.UnfreezeGame();
     }
 
@@ -44,14 +43,19 @@ public class GameManager : MonoBehaviour
         TimeScaleController.UnfreezeGame();
     }
 
+    IEnumerator ContinuePlayingCoroutine()
+    {
+        TimeScaleController.FreezeGame();
+        yield return new WaitForSecondsRealtime(playerRespawnDelay); // Temp
+        spawner.DespawnGameElements();
+        yield return new WaitForSecondsRealtime(0.5f); // Temp
+        spawner.SpawnGameElements();
+        TimeScaleController.UnfreezeGame();
+    }
+
     void Respawn()
     {
         respawnCoroutine = StartCoroutine(RespawnCoroutine());
-    }
-
-    void SpawnPlayer()
-    {
-        Instantiate(player);
     }
 
     void GameOver()
@@ -61,10 +65,8 @@ public class GameManager : MonoBehaviour
         StartCoroutine(RestartGameCoroutine());
     }
 
-    // Temp
-    void Win()
-    {
-        TimeScaleController.FreezeGame();
-        StartCoroutine(RestartGameCoroutine());
+    void GameWon()
+    {     
+        StartCoroutine(ContinuePlayingCoroutine());
     }
 }

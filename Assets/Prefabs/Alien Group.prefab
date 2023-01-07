@@ -66,6 +66,7 @@ MonoBehaviour:
   - {fileID: 7605875332285243924, guid: 14cee7774d0731a458931bba886add9f, type: 3}
   minShootingTime: 0.5
   maxShootingTime: 2
+  shootingTimeDecrement: 0.5
   projetileSpeed: 20
 --- !u!50 &946948358
 Rigidbody2D:

@@ -6,14 +6,19 @@ public class EnemyShooting : MonoBehaviour
 {
     [SerializeField] EnemyGroup enemyGroup;
     [SerializeField] List<GameObject> projectiles;
-    [SerializeField] float minShootingTime;
-    [SerializeField] float maxShootingTime;
     [SerializeField] float projetileSpeed;
+
+    EnemyFireRateController fireRateController;
 
     public float Speed => projetileSpeed;
 
     Coroutine shootingCoroutine;
     int currentProjectile;
+
+    void Awake()
+    {
+        fireRateController = FindObjectOfType<EnemyFireRateController>();    
+    }
 
     void Start()
     {
@@ -37,7 +42,7 @@ public class EnemyShooting : MonoBehaviour
 
     float GetRandomShootingTime()
     {
-        return Random.Range(minShootingTime, maxShootingTime);
+        return Random.Range(fireRateController.MinShootingTime, fireRateController.MaxShootingTime);
     }
 
     int GetRandomColumn()

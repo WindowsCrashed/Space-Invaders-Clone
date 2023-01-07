@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3535454293041171263}
   - component: {fileID: 3535454293041171248}
   - component: {fileID: 5520542145741438023}
+  - component: {fileID: 3535454294343925674}
+  - component: {fileID: 5058266388719967547}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -48,6 +50,7 @@ MonoBehaviour:
   player: {fileID: 597630014705741290, guid: f1efe8a1ca5fde34d9642e1b2d70d426, type: 3}
   playerRespawnDelay: 2
   gameOverDelay: 3
+  spawner: {fileID: 3535454294343925674}
 --- !u!114 &5520542145741438023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,3 +64,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLives: 3
+--- !u!114 &3535454294343925674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3535454293041171249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8e4d97bcd109f48a9c65caf4cb5842, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameElements: {fileID: 7893257240718831298, guid: db1781626f4fdf849bb209c6755dc75c, type: 3}
+  currentGameElementsInstance: {fileID: 0}
+  currentPlayerInstance: {fileID: 0}
+--- !u!114 &5058266388719967547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3535454293041171249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 128487517c805f44996ffd8bb7549756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minShootingTime: 0.5
+  maxShootingTime: 2
+  shootingTimeDecrement: 0.5
