@@ -317,6 +317,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4254383474494262554, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
+      propertyPath: chain
+      value: 
+      objectReference: {fileID: 7023035759646573523}
     - target: {fileID: 6215608660632622160, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
       propertyPath: m_Name
       value: MenuCanvas
@@ -409,5 +413,55 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1407039330}
+    - target: {fileID: 6417917367921754443, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417917368027468640, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417917368027468642, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417917368812874421, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7023035759646573522}
+    - target: {fileID: 6417917368812874421, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417917368812874421, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417917368812874421, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
+--- !u!114 &7023035759646573522 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4254383474494262554, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
+  m_PrefabInstance: {fileID: 6417917369109303982}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbfcceb31f53e60428bb55c47966c85b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7023035759646573523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8777216284476852272, guid: 321fbc3be1290fb4f81fc0f5bcb5db22, type: 3}
+  m_PrefabInstance: {fileID: 6417917369109303982}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea0ccde416508324bb0dc4b148e48c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
