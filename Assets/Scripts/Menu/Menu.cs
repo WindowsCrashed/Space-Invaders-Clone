@@ -29,6 +29,6 @@ public class Menu : MonoBehaviour
     // Temp
     public void PlayGame()
     {
-        SceneController.LoadGame();
+        FindObjectOfType<SceneController>().LoadGame();
     }
 }

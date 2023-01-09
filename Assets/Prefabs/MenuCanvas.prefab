@@ -282,10 +282,8 @@ GameObject:
   - component: {fileID: 6215608660632622175}
   - component: {fileID: 6215608660632622174}
   - component: {fileID: 6215608660632622161}
-  - component: {fileID: 6215608660632622173}
   - component: {fileID: 7557380530283039151}
   - component: {fileID: 920007195879878195}
-  - component: {fileID: 4064445919977296255}
   - component: {fileID: 4254383474494262554}
   - component: {fileID: 8777216284476852272}
   m_Layer: 5
@@ -383,21 +381,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6215608660632622173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6215608660632622160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7d6fd2ace6a0db47abf57cc5f1a21d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeText: {fileID: 0}
-  lifeIconsContainer: {fileID: 0}
-  healthManager: {fileID: 0}
 --- !u!114 &7557380530283039151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,21 +409,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeInterval: 0.1
---- !u!114 &4064445919977296255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6215608660632622160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16cb935210e58134681696694395a039, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textLabel: {fileID: 0}
-  text: game over
-  typewriterEffect: {fileID: 920007195879878195}
 --- !u!114 &4254383474494262554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2170,13 +2138,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6215608660632622160}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 4254383474494262554}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
