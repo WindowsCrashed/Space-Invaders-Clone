@@ -40,8 +40,7 @@ public class GameManager : MonoBehaviour
     IEnumerator RestartGameCoroutine()
     {
         yield return new WaitForSecondsRealtime(gameOverDelay);
-        sceneController.LoadGame();
-        //TimeScaleController.UnfreezeGame();
+        sceneController.LoadChoosePlayer();
     }
 
     IEnumerator ContinuePlayingCoroutine()

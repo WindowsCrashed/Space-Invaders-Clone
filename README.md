@@ -31,9 +31,11 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Increase enemy fire rate after Game Won
 - [x] Main menu
 - [x] Scene transition
-- [ ] Secondary menu
-- [ ] Sound
+- [x] Player selection menus
 - [ ] Credits
+- [ ] Credits menu
+- [ ] Game start "animations"
+- [ ] Sound
 - [ ] Barriers
 - [ ] Screen/camera adjustments for different devices
 - [ ] (Optional) Colors, multiplayer...

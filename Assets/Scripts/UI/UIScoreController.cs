@@ -16,6 +16,8 @@ public class UIScoreController : MonoBehaviour
         ScoreKeeper.OnUpdateScore.AddListener(() => UpdateScore(score1, scoreKeeper.Score));
         ScoreKeeper.OnUpdateHiScore.AddListener(() => UpdateScore(hiscore, scoreKeeper.HiScore));
         GameManager.OnGameStart.AddListener(ClearScore);
+
+        if (FindObjectOfType<GameManager>() == null) ClearScore();
     }
 
     void UpdateScore(TMP_Text label, int score)
@@ -25,8 +27,11 @@ public class UIScoreController : MonoBehaviour
 
     void ClearScore()
     {
-        scoreKeeper.ResetScore();
-        UpdateScore(score1, scoreKeeper.Score);
-        UpdateScore(hiscore, scoreKeeper.HiScore);
+        if (scoreKeeper != null)
+        {
+            scoreKeeper.ResetScore();
+            UpdateScore(score1, scoreKeeper.Score);
+            UpdateScore(hiscore, scoreKeeper.HiScore);
+        }       
     }
 }

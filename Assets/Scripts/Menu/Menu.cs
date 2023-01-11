@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Menu : MonoBehaviour
 {
@@ -26,9 +27,8 @@ public class Menu : MonoBehaviour
         chain.RunChain();
     }
 
-    // Temp
-    public void PlayGame()
+    void OnFire(InputValue value)
     {
-        FindObjectOfType<SceneController>().LoadGame();
+        FindObjectOfType<SceneController>().LoadChoosePlayer();
     }
 }
