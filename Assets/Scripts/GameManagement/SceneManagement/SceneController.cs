@@ -35,4 +35,9 @@ public class SceneController : MonoBehaviour
     {
         LoadScene("ChoosePlayer");    
     }
+    
+    public void LoadPlayPlayer()
+    {
+        LoadScene("PlayPlayer");
+    }
 }
