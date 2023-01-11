@@ -6,6 +6,8 @@ public class SceneController : MonoBehaviour
 {
     [SerializeField] SceneTransition transition;
 
+    bool isLoading;
+
     IEnumerator LoadSceneCoroutine(string scene)
     {
         TimeScaleController.FreezeGame();
@@ -15,8 +17,22 @@ public class SceneController : MonoBehaviour
         TimeScaleController.UnfreezeGame();
     }
 
+    void LoadScene(string name)
+    {
+        if (!isLoading)
+        {
+            isLoading = true;
+            StartCoroutine(LoadSceneCoroutine(name));
+        }
+    }
+
     public void LoadGame()
     {
-        StartCoroutine(LoadSceneCoroutine("Game"));
+        LoadScene("Game");       
+    }
+
+    public void LoadChoosePlayer()
+    {
+        LoadScene("ChoosePlayer");    
     }
 }
