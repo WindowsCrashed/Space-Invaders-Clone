@@ -7,7 +7,7 @@ public class CreditInputController : MonoBehaviour
 
     CreditKeeper creditKeeper;
 
-    void Awake()
+    void Start()
     {
         creditKeeper = FindObjectOfType<CreditKeeper>();    
     }

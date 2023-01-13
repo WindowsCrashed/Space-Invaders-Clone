@@ -323,9 +323,10 @@ GameObject:
   - component: {fileID: 9132659676936031514}
   - component: {fileID: 6553980236612773744}
   - component: {fileID: 4526639250811928812}
-  - component: {fileID: 657460654952719301}
   - component: {fileID: 5466156588475688687}
   - component: {fileID: 2898717482081206518}
+  - component: {fileID: 31970711702975721}
+  - component: {fileID: 1093896559717119450}
   m_Layer: 5
   m_Name: InsertCoinCanvas
   m_TagString: Untagged
@@ -461,50 +462,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeInterval: 0.1
---- !u!114 &657460654952719301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7230275098192394895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbfcceb31f53e60428bb55c47966c85b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elements:
-  - initialDelay: 1
-    delay: 1.2
-    elements:
-    - element: {fileID: 7711387514290399090}
-      eventType: 1
-  - initialDelay: 0
-    delay: 1.8
-    elements:
-    - element: {fileID: 7711387512540279496}
-      eventType: 1
-  - initialDelay: 0
-    delay: 1.1
-    elements:
-    - element: {fileID: 9151882205039193839}
-      eventType: 1
-  - initialDelay: 0
-    delay: 1
-    elements:
-    - element: {fileID: 7711387513856248402}
-      eventType: 1
-  - initialDelay: 0
-    delay: 1.2
-    elements:
-    - element: {fileID: 1839244387243376973}
-      eventType: 1
-  - initialDelay: 0
-    delay: 1
-    elements:
-    - element: {fileID: 1661385315620815813}
-      eventType: 1
-  chain: {fileID: 5466156588475688687}
 --- !u!114 &5466156588475688687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -547,6 +504,62 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &31970711702975721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7230275098192394895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2430fe73ccbdc4295157bd34bef2d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+  - initialDelay: 0.5
+    delay: 1.2
+    elements:
+    - element: {fileID: 7711387514290399090}
+      eventType: 1
+  - initialDelay: 0
+    delay: 1.8
+    elements:
+    - element: {fileID: 7711387512540279496}
+      eventType: 1
+  - initialDelay: 0
+    delay: 1.1
+    elements:
+    - element: {fileID: 9151882205039193839}
+      eventType: 1
+  - initialDelay: 0
+    delay: 0.9
+    elements:
+    - element: {fileID: 7711387513856248402}
+      eventType: 1
+  - initialDelay: 0
+    delay: 1.2
+    elements:
+    - element: {fileID: 1839244387243376973}
+      eventType: 1
+  - initialDelay: 0
+    delay: 0
+    elements:
+    - element: {fileID: 1661385315620815813}
+      eventType: 1
+  chain: {fileID: 5466156588475688687}
+--- !u!114 &1093896559717119450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7230275098192394895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70629432e5129694c868930c501a727d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7711387512540279496
 GameObject:
   m_ObjectHideFlags: 0

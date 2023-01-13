@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: 4254383474494262554}
   - component: {fileID: 8777216284476852272}
   - component: {fileID: 1886744295855042089}
+  - component: {fileID: 7079142339985194576}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -523,6 +524,63 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7079142339985194576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6215608660632622160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2430fe73ccbdc4295157bd34bef2d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+  - initialDelay: 1
+    delay: 0.6
+    elements:
+    - element: {fileID: 6417917368939550488}
+      eventType: 1
+  - initialDelay: 0
+    delay: 2.2
+    elements:
+    - element: {fileID: 6417917367731095981}
+      eventType: 1
+  - initialDelay: 0
+    delay: 0
+    elements:
+    - element: {fileID: 6417917368405449751}
+      eventType: 0
+    - element: {fileID: 6417917367104615356}
+      eventType: 0
+    - element: {fileID: 6417917367300057993}
+      eventType: 0
+    - element: {fileID: 6417917367907683504}
+      eventType: 0
+    - element: {fileID: 6417917368303979972}
+      eventType: 0
+  - initialDelay: 0
+    delay: 1.2
+    elements:
+    - element: {fileID: 6417917367624246413}
+      eventType: 1
+  - initialDelay: 0
+    delay: 1.2
+    elements:
+    - element: {fileID: 1054022146347226161}
+      eventType: 1
+  - initialDelay: 0
+    delay: 1.2
+    elements:
+    - element: {fileID: 5592303535705209491}
+      eventType: 1
+  - initialDelay: 0
+    delay: 1.2
+    elements:
+    - element: {fileID: 6334157232941167808}
+      eventType: 1
+  chain: {fileID: 8777216284476852272}
 --- !u!1 &6334157232941167808
 GameObject:
   m_ObjectHideFlags: 0

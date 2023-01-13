@@ -7,7 +7,7 @@ public class UICreditController : MonoBehaviour
 
     CreditKeeper creditKeeper;
 
-    void Awake()
+    void Start()
     {
         creditKeeper = FindObjectOfType<CreditKeeper>();
         CreditKeeper.OnUpdateCredit.AddListener(UpdateCredit);

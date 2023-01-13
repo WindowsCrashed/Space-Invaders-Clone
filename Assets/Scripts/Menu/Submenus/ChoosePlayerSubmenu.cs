@@ -14,8 +14,7 @@ public class ChoosePlayerSubmenu : MonoBehaviour
 
     void SelectPlayer(int player)
     {
-        playerSelector.SetPlayers(player);
-        sceneController.LoadPlayPlayer();
+        if (playerSelector.TrySetPlayers(player)) sceneController.LoadPlayPlayer();
     }
 
     void OnPlayer1(InputValue value)

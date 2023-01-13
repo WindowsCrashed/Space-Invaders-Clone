@@ -14,4 +14,18 @@ public class PlayerSelector : MonoBehaviour
         Players = Mathf.Clamp(players, 1, 2);
         FindObjectOfType<CreditKeeper>().TakeCredit(Players);
     }
+
+    public bool TrySetPlayers(int players)
+    {
+        CreditKeeper creditKeeper = FindObjectOfType<CreditKeeper>();        
+        Players = Mathf.Clamp(players, 1, 2);
+
+        if (creditKeeper != null && creditKeeper.Credit >= Players)
+        {
+            creditKeeper.TakeCredit(Players);
+            return true;
+        }
+
+        return false;
+    }
 }
