@@ -40,4 +40,9 @@ public class SceneController : MonoBehaviour
     {
         LoadScene("PlayPlayer");
     }
+
+    public void LoadInsertCoin()
+    {
+        LoadScene("InsertCoin");
+    }
 }

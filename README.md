@@ -32,8 +32,8 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Main menu
 - [x] Scene transition
 - [x] Player selection menus
-- [ ] Credits
-- [ ] Credits menu
+- [x] Credits
+- [x] Credits menu
 - [ ] Game start "animations"
 - [ ] Sound
 - [ ] Barriers

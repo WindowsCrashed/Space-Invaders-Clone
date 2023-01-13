@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: c4200630d0bd511408b3d02469a879c9
   - enabled: 1
+    path: Assets/Scenes/InsertCoin.unity
+    guid: 7c445c2aad1a7324595253b612c2594e
+  - enabled: 1
     path: Assets/Scenes/ChoosePlayer.unity
     guid: b7c9f89159a494442b82710b931938a5
   - enabled: 1

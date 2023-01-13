@@ -12,15 +12,18 @@ public class ChoosePlayerSubmenu : MonoBehaviour
         playerSelector = FindObjectOfType<PlayerSelector>();
     }
 
+    void SelectPlayer(int player)
+    {
+        if (playerSelector.TrySetPlayers(player)) sceneController.LoadPlayPlayer();
+    }
+
     void OnPlayer1(InputValue value)
     {
-        playerSelector.SetPlayers(1);
-        sceneController.LoadPlayPlayer();
+        SelectPlayer(1);
     }
 
     void OnPlayer2(InputValue value)
     {
-        playerSelector.SetPlayers(2);
-        sceneController.LoadPlayPlayer();
+        SelectPlayer(2);
     }
 }
