@@ -1423,6 +1423,7 @@ GameObject:
   - component: {fileID: 3598429267722823309}
   - component: {fileID: 6184990934086484241}
   - component: {fileID: 7023035758748237405}
+  - component: {fileID: 9070525001409931198}
   m_Layer: 5
   m_Name: GameCanvas
   m_TagString: Untagged
@@ -1575,6 +1576,19 @@ MonoBehaviour:
   textLabel: {fileID: 1653442299061028027}
   text: game over
   typewriterEffect: {fileID: 6184990934086484241}
+--- !u!114 &9070525001409931198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104299943467481970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05accc0b60d48734fabc633b8dd7fcdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creditLabel: {fileID: 1326043260}
 --- !u!1 &1104299943530863829
 GameObject:
   m_ObjectHideFlags: 0

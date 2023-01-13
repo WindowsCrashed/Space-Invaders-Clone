@@ -12,5 +12,6 @@ public class PlayerSelector : MonoBehaviour
     public void SetPlayers(int players)
     {       
         Players = Mathf.Clamp(players, 1, 2);
+        FindObjectOfType<CreditKeeper>().TakeCredit(Players);
     }
 }

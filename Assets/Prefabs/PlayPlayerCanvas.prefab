@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 6262147754356010162}
   - component: {fileID: 4551708516625181423}
   - component: {fileID: 5924954187809299568}
+  - component: {fileID: 7883073910949539167}
   m_Layer: 5
   m_Name: PlayPlayerCanvas
   m_TagString: Untagged
@@ -321,6 +322,19 @@ MonoBehaviour:
   score2Label: {fileID: 4200977803422386667}
   playPlayer1: {fileID: 4200977803041429367}
   playPlayer2: {fileID: 472534783}
+--- !u!114 &7883073910949539167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3827951928515377983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05accc0b60d48734fabc633b8dd7fcdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creditLabel: {fileID: 4200977802389557297}
 --- !u!1 &4200977801897030389
 GameObject:
   m_ObjectHideFlags: 0

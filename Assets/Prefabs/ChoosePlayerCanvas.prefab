@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7830424094364455280}
   - component: {fileID: 3598429268669405954}
   - component: {fileID: 246840523172472455}
+  - component: {fileID: 2403953337765622327}
   m_Layer: 5
   m_Name: ChoosePlayerCanvas
   m_TagString: Untagged
@@ -167,6 +168,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneController: {fileID: 0}
+--- !u!114 &2403953337765622327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5911031212769594511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05accc0b60d48734fabc633b8dd7fcdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creditLabel: {fileID: 6727095139459000193}
 --- !u!1 &6727095138932311365
 GameObject:
   m_ObjectHideFlags: 0
