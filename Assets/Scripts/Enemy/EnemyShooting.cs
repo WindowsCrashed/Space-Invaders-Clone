@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyShooting : MonoBehaviour
 {
@@ -9,15 +10,17 @@ public class EnemyShooting : MonoBehaviour
     [SerializeField] float projetileSpeed;
 
     EnemyFireRateController fireRateController;
-
-    public float Speed => projetileSpeed;
-
     Coroutine shootingCoroutine;
     int currentProjectile;
 
+    public float Speed => projetileSpeed;
+
+    public static UnityEvent OnStartShooting = new();
+
     void Awake()
     {
-        fireRateController = FindObjectOfType<EnemyFireRateController>();    
+        fireRateController = FindObjectOfType<EnemyFireRateController>();
+        OnStartShooting.AddListener(StartShooting);
     }
 
     void Start()
@@ -25,9 +28,7 @@ public class EnemyShooting : MonoBehaviour
         foreach (EnemyColumn column in enemyGroup.Columns)
         {
             column.OnEmptyColumn.AddListener(() => RemoveColumn(column));
-        }
-
-        shootingCoroutine = StartCoroutine(ShootingCoroutine());
+        }       
     }
 
     IEnumerator ShootingCoroutine()
@@ -48,6 +49,11 @@ public class EnemyShooting : MonoBehaviour
     int GetRandomColumn()
     {
         return Random.Range(0, enemyGroup.Columns.Count - 1);
+    }
+
+    void StartShooting()
+    {
+        shootingCoroutine = StartCoroutine(ShootingCoroutine());
     }
 
     void StopShooting()

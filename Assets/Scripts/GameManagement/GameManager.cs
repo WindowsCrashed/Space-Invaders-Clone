@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] float playerRespawnDelay;
     [SerializeField] float gameOverDelay;
+    [SerializeField] float restartDelay;
     [SerializeField] Spawner spawner;
     [SerializeField] SceneController sceneController;
 
@@ -46,11 +47,8 @@ public class GameManager : MonoBehaviour
     IEnumerator ContinuePlayingCoroutine()
     {
         TimeScaleController.FreezeGame();
-        yield return new WaitForSecondsRealtime(playerRespawnDelay); // Temp
-        spawner.DespawnGameElements();
-        yield return new WaitForSecondsRealtime(0.5f); // Temp
-        spawner.SpawnGameElements();
-        TimeScaleController.UnfreezeGame();
+        yield return new WaitForSecondsRealtime(restartDelay);
+        RespawnGameElements();
     }
 
     void Respawn()
@@ -58,10 +56,22 @@ public class GameManager : MonoBehaviour
         respawnCoroutine = StartCoroutine(RespawnCoroutine());
     }
 
+    void RespawnGameElements()
+    {
+        spawner.DespawnGameElements();
+        spawner.SpawnGameElements();
+    }
+
     void GameOver()
     {
-        StopCoroutine(respawnCoroutine);
-        respawnCoroutine = null;
+        TimeScaleController.FreezeGame();
+
+        if (respawnCoroutine != null)
+        {
+            StopCoroutine(respawnCoroutine);
+            respawnCoroutine = null;
+        }
+        
         StartCoroutine(RestartGameCoroutine());
     }
 

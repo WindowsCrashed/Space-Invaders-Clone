@@ -9,6 +9,7 @@ public class Spawner : MonoBehaviour
     public void SpawnPlayer()
     {
         currentPlayerInstance = Instantiate(gameElements.Player, currentGameElementsInstance.transform);
+        currentPlayerInstance.SetActive(true);
     }
 
     public void SpawnGameElements()

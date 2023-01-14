@@ -226,6 +226,30 @@ PrefabInstance:
       propertyPath: healthManager
       value: 
       objectReference: {fileID: 3535454294343925672}
+    - target: {fileID: 1104299943530863830, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104299943530863830, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104299943530863830, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104299944555878213, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104299944555878213, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104299944555878213, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 347fd7eb6dbfe7144a045dcc6a872b70, type: 3}
 --- !u!1001 &259334110
@@ -584,6 +608,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3535454293041171248, guid: d8d9e8fb28e9b0f45b8e062f10d81c29, type: 3}
+      propertyPath: restartDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3535454293041171248, guid: d8d9e8fb28e9b0f45b8e062f10d81c29, type: 3}
       propertyPath: sceneController
       value: 
