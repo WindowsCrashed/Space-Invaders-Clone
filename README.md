@@ -34,7 +34,7 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Player selection menus
 - [x] Credits
 - [x] Credits menu
-- [ ] Game start "animations"
+- [x] Game start "animations"
 - [ ] Sound
 - [ ] Barriers
 - [ ] Screen/camera adjustments for different devices

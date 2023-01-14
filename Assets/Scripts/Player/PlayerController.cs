@@ -7,13 +7,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] PlayerMovement playerMovement;
     [SerializeField] PlayerShooting playerShooting;
 
-    public static readonly UnityEvent OnDie = new();
+    public static readonly UnityEvent OnDie = new();    
 
     public bool IsDead { get; private set; }
 
     void Awake()
     {
-        GameManager.OnGameWon.AddListener(DisableControls);    
+        GameManager.OnGameWon.AddListener(DisableControls);
+        GameManager.OnGameOver.AddListener(DisableControls);
     }
 
     void SetDead()

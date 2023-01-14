@@ -22,7 +22,13 @@ public class EnemyCollision : MonoBehaviour
                 destroyer.Explode();
             }
                        
-            Destroy(collision.gameObject);    
+            Destroy(collision.gameObject);
+            return;
+        }
+
+        if (collider2d.IsTouchingLayers(LayerMask.GetMask("Floor")))
+        {
+            GameManager.OnGameOver.Invoke();
         }
     }
 }
