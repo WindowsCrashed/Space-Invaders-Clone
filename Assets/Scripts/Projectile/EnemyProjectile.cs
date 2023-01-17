@@ -12,6 +12,6 @@ public class EnemyProjectile : MonoBehaviour, IProjectile
         GetComponent<Rigidbody2D>().Sleep();
         GetComponent<BoxCollider2D>().enabled = false;
         GetComponentInChildren<Animator>().enabled = false;
-        GetComponent<Destroyer>().Explode(sprite);
+        GetComponent<Destroyer>().Explode(null, sprite);
     }
 }

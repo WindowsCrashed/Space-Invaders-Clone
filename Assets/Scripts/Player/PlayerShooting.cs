@@ -26,12 +26,11 @@ public class PlayerShooting : MonoBehaviour
     {
         if (isFiring && firingCoroutine == null)
         {
-            firingCoroutine = StartCoroutine(FireContinuously());
+            StartShooting();
         }
         else if (!isFiring && firingCoroutine != null)
         {
-            StopCoroutine(firingCoroutine);
-            firingCoroutine = null;
+            StopShooting();
         }
     }
 
@@ -47,5 +46,16 @@ public class PlayerShooting : MonoBehaviour
     void ToogleFiring(bool value)
     {
         isFiring = value;
+    }
+
+    void StartShooting()
+    {      
+        firingCoroutine = StartCoroutine(FireContinuously());
+    }
+
+    void StopShooting()
+    {        
+        StopCoroutine(firingCoroutine);
+        firingCoroutine = null;
     }
 }
