@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class SceneTransition : MonoBehaviour
@@ -10,7 +9,7 @@ public class SceneTransition : MonoBehaviour
 
     public void PlayTransition(string name)
     {
-        SelectedTransition = transitions.Where(t => t.Name == name).First();
+        SelectedTransition = transitions.Find(t => t.Name == name);
         SelectedTransition.PlayTransition();
     }
 }

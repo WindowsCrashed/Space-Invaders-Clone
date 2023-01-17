@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class SpriteController : MonoBehaviour
@@ -12,7 +11,7 @@ public class SpriteController : MonoBehaviour
 
     IEnumerator AnimationCoroutine(string name, bool loop)
     {
-        var animation = animations.Where(a => a.Name == name).First();
+        var animation = animations.Find(a => a.Name == name);
 
         do
         {
@@ -28,7 +27,7 @@ public class SpriteController : MonoBehaviour
     {
         if (sprites == null) return;
 
-        SpriteObj sprite = sprites.Where(s => s.Name == name).First();
+        SpriteObj sprite = sprites.Find(s => s.Name == name);
 
         if (sprite.Position != Vector2.zero)
         {
@@ -53,7 +52,7 @@ public class SpriteController : MonoBehaviour
     public void Animate(string name)
     {
         if (animations == null) return; 
-        spriteRenderer.sprite = animations.Where(a => a.Name == name).First().GetNextSprite();
+        spriteRenderer.sprite = animations.Find(a => a.Name == name).GetNextSprite();
     }
 
     public void AnimateAuto(string name, bool loop = false)

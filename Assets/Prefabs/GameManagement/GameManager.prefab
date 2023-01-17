@@ -50,7 +50,10 @@ MonoBehaviour:
   player: {fileID: 597630014705741290, guid: f1efe8a1ca5fde34d9642e1b2d70d426, type: 3}
   playerRespawnDelay: 2
   gameOverDelay: 3
+  restartDelay: 1
   spawner: {fileID: 3535454294343925674}
+  sceneController: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!114 &5520542145741438023
 MonoBehaviour:
   m_ObjectHideFlags: 0

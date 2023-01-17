@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using TMPro;
 
-[System.Serializable]
+[Serializable]
 public class LoadableObject
 {
     [SerializeField] GameObject element;

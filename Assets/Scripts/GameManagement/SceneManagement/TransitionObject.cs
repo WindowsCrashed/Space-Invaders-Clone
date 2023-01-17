@@ -7,7 +7,6 @@ public class TransitionObject : MonoBehaviour
     [SerializeField] float duration;
 
     public string Name => transitionName;
-    public Animator Animator => animator;
     public float Duration => duration;
 
     public void PlayTransition()

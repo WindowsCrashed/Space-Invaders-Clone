@@ -17,9 +17,10 @@ public class GameElementsLoader : MonoBehaviour
     {
         chain.AddTask(TimeScaleController.FreezeGame);
         DisplayEnemies();
+        chain.AddTask(FindObjectOfType<BackgroundTrackController>().StartBackgroundTrack);
         chain.AddTask(TimeScaleController.UnfreezeGame, 1);
         chain.AddTask(DisplayPlayer);
-        chain.AddTask(EnemyShooting.OnStartShooting.Invoke);
+        chain.AddTask(EnemyShooting.OnStartShooting.Invoke);     
     }
 
     void DisplayEnemies()
