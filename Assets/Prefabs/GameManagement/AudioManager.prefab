@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 9020980100983361885}
   - component: {fileID: 9020980100983361886}
   - component: {fileID: 4002735049991495637}
+  - component: {fileID: 4119669763995214864}
+  - component: {fileID: 4396562105076931434}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -45,23 +47,147 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b41a44bf8d1cc746a699ca9e524ce25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4002735049991495637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020980100983361884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c610fb59b3f64594d936803103b08ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 9020980100983361886}
+  audioController: {fileID: 4396562105076931434}
+  rules:
+  - clip: BgStage1
+    enemyCount: 55
+  - clip: BgStage2
+    enemyCount: 40
+  - clip: BgStage3
+    enemyCount: 30
+  - clip: BgStage4
+    enemyCount: 20
+  - clip: BgStage5
+    enemyCount: 6
+  - clip: BgStage6
+    enemyCount: 3
+  - clip: BgStage7
+    enemyCount: 1
+  initialClip: BgStage1
+--- !u!82 &4119669763995214864
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020980100983361884}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &4396562105076931434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9020980100983361884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc206739241654f4e9833d857e3a1067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 4119669763995214864}
+  playOnAwake: 0
   clips:
-  - name: EnemyDeath
-    clip: {fileID: 8300000, guid: 55a2de38032ed8941976d8de20776b7a, type: 3}
-    volume: 0.5
-    loop: 0
-  - name: PlayerDeath
-    clip: {fileID: 8300000, guid: 12172db65888efa4d8c7e3fb6e64f255, type: 3}
-    volume: 0.5
-    loop: 0
-  - name: BonusEnemy
-    clip: {fileID: 8300000, guid: cbede66352aa2d74c90208df16d29704, type: 3}
-    volume: 0.5
-    loop: 1
-  - name: BonusEnemyDeath
-    clip: {fileID: 8300000, guid: fe88baf18c7c9e84fb262f067eb501b1, type: 3}
-    volume: 0.5
-    loop: 1
   - name: BgStage1
     clip: {fileID: 8300000, guid: 33c13f9d2a3fd1b4bb8f0b1d1d54a6ab, type: 3}
     volume: 0.5
@@ -90,32 +216,3 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 25b8cdb5bcebc3641a901be13b85c268, type: 3}
     volume: 0.5
     loop: 1
---- !u!114 &4002735049991495637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9020980100983361884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c610fb59b3f64594d936803103b08ff2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioManager: {fileID: 9020980100983361886}
-  rules:
-  - clip: BgStage1
-    enemyCount: 55
-  - clip: BgStage2
-    enemyCount: 44
-  - clip: BgStage3
-    enemyCount: 33
-  - clip: BgStage4
-    enemyCount: 22
-  - clip: BgStage5
-    enemyCount: 16
-  - clip: BgStage6
-    enemyCount: 11
-  - clip: BgStage7
-    enemyCount: 5
-  initialClip: BgStage1

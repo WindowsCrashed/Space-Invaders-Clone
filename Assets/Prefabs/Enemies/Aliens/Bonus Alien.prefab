@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 5080724689975670450}
   - component: {fileID: 6499613351449651380}
   - component: {fileID: -3278830938636938516}
+  - component: {fileID: 8229144773737552893}
   m_Layer: 0
   m_Name: Bonus Alien
   m_TagString: Untagged
@@ -252,7 +253,7 @@ MonoBehaviour:
   score: {fileID: 5045634153165874372}
   rb2d: {fileID: 5080724689975670450}
   spriteController: {fileID: 2854279893998007756}
-  audioSource: {fileID: -3278830938636938516}
+  audioController: {fileID: 8229144773737552893}
 --- !u!82 &-3278830938636938516
 AudioSource:
   m_ObjectHideFlags: 0
@@ -263,11 +264,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cbede66352aa2d74c90208df16d29704, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -349,3 +350,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8229144773737552893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4623061848845930111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc206739241654f4e9833d857e3a1067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: BonusEnemy
+  source: {fileID: -3278830938636938516}
+  playOnAwake: 1
+  clips:
+  - name: BonusAlien
+    clip: {fileID: 8300000, guid: cbede66352aa2d74c90208df16d29704, type: 3}
+    volume: 0.5
+    loop: 1
+  - name: BonusAlienDeath
+    clip: {fileID: 8300000, guid: fe88baf18c7c9e84fb262f067eb501b1, type: 3}
+    volume: 0.5
+    loop: 1

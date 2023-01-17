@@ -14,7 +14,7 @@ public class PlayerCollision : MonoBehaviour
             if (!controller.IsDead)
             {
                 controller.Die();
-                destroyer.ExplodeAsync("PlayerDeath", null, GameManager.OnPlayerDestroyed.Invoke);
+                destroyer.ExplodeAsync(null, GameManager.OnPlayerDestroyed.Invoke);
             }
             
             Destroy(collision.gameObject);

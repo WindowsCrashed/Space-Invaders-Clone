@@ -19,8 +19,7 @@ public class EnemyCollision : MonoBehaviour
         {
             if (!controller.IsDead) {
                 controller.Die();
-                string sound = controller is not BonusEnemyController ? "EnemyDeath" : null;
-                destroyer.Explode(sound);
+                destroyer.Explode();
             }
                        
             Destroy(collision.gameObject);

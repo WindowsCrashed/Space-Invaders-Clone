@@ -12,6 +12,4 @@ public class SoundClip
     public AudioClip Clip => clip;
     public float Volume => volume;
     public bool Loop => loop;
-
-    public AudioSource Source { get; set; }
 }

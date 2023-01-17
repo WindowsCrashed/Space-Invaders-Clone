@@ -4,31 +4,18 @@ using UnityEngine;
 public class BackgroundTrackController : MonoBehaviour
 {
     [SerializeField] AudioManager audioManager;
+    [SerializeField] AudioController audioController;
     [SerializeField] List<PlaybackSpeedRule> rules;
     [SerializeField] string initialClip;
 
-    string currentClip;
-
     public void StartBackgroundTrack()
     {
-        audioManager.PlayClip(initialClip);
-        currentClip = initialClip;
-    }
-
-    public void StopBackgroundTrack()
-    {
-        audioManager.StopClip(currentClip);
+        audioController.PlayClip(initialClip);
     }
 
     public void ManagePlaybackSpeed(int enemyCount)
     {
         string clip = rules.Find(r => r.EnemyCount == enemyCount)?.Clip;
-
-        if (clip != null)
-        {
-            audioManager.StopClip(currentClip);
-            audioManager.PlayClip(clip);
-            currentClip = clip;
-        }
+        if (clip != null) audioController.PlayClip(clip);
     }
 }

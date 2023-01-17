@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] PlayerMovement playerMovement;
     [SerializeField] PlayerShooting playerShooting;
+    [SerializeField] AudioSource audioSource;
 
     public static readonly UnityEvent OnDie = new();    
 
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
         SetDead();
         DisableControls();
         PlayDeathAnimation();
+        audioSource.Play();
         OnDie.Invoke();
     }
 }

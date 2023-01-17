@@ -11,9 +11,13 @@ public class SceneController : MonoBehaviour
     IEnumerator LoadSceneCoroutine(string scene)
     {
         TimeScaleController.FreezeGame();
+        
         transition.PlayTransition("Wipe");
+        
         yield return new WaitForSecondsRealtime(transition.SelectedTransition.Duration);
+        
         SceneManager.LoadScene(scene);
+        
         TimeScaleController.UnfreezeGame();
     }
 

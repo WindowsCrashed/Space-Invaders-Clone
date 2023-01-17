@@ -6,6 +6,7 @@ public class EnemyController : MonoBehaviour, IEnemyController
     [SerializeField] Transform gun;
     [SerializeField] SpriteController spriteController;
     [SerializeField] Score score;
+    [SerializeField] AudioSource audioSource;
 
     public bool IsDead { get; private set; }
 
@@ -28,6 +29,7 @@ public class EnemyController : MonoBehaviour, IEnemyController
     {
         column.RemoveFromColumn(this);
         SetDead();
+        audioSource.Play();
         score.ScorePoints();
     }
 }

@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] float restartDelay;
     [SerializeField] Spawner spawner;
     [SerializeField] SceneController sceneController;
-    [SerializeField] BackgroundTrackController backgroundTrackController;
+    [SerializeField] AudioManager audioManager;
 
     Coroutine respawnCoroutine;
 
@@ -34,21 +34,30 @@ public class GameManager : MonoBehaviour
     IEnumerator RespawnCoroutine()
     {
         TimeScaleController.FreezeGame();
+        
+        audioManager.PauseAllSources();
+        
         yield return new WaitForSecondsRealtime(playerRespawnDelay);
+        
         spawner.SpawnPlayer();
+        audioManager.ResumeAllSources();
+        
         TimeScaleController.UnfreezeGame();
     }
 
     IEnumerator RestartGameCoroutine()
     {
         yield return new WaitForSecondsRealtime(gameOverDelay);
+        
         sceneController.LoadChoosePlayer();
     }
 
     IEnumerator ContinuePlayingCoroutine()
     {
         TimeScaleController.FreezeGame();
+        
         yield return new WaitForSecondsRealtime(restartDelay);
+        
         RespawnGameElements();
     }
 
@@ -67,7 +76,7 @@ public class GameManager : MonoBehaviour
     {
         TimeScaleController.FreezeGame();
 
-        backgroundTrackController.StopBackgroundTrack();
+        audioManager.StopAllSources();
 
         if (respawnCoroutine != null)
         {
@@ -80,7 +89,7 @@ public class GameManager : MonoBehaviour
 
     void GameWon()
     {
-        backgroundTrackController.StopBackgroundTrack();
+        audioManager.StopAllSources();
         StartCoroutine(ContinuePlayingCoroutine());
     }
 }

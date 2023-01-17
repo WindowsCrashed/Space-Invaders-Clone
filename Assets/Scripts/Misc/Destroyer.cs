@@ -7,13 +7,6 @@ public class Destroyer : MonoBehaviour
     [SerializeField] float destroyDelay;
     [SerializeField] SpriteController spriteController;
 
-    AudioManager audioManager;
-
-    void Awake()
-    {
-        audioManager = FindObjectOfType<AudioManager>();    
-    }
-
     IEnumerator ExplosionCoroutine(string sprite, Action next)
     {
         if (spriteController != null) spriteController.SetSprite(sprite);
@@ -22,16 +15,14 @@ public class Destroyer : MonoBehaviour
         next?.Invoke();
     }
 
-    public void Explode(string sound = null, string sprite = "Death")
+    public void Explode(string sprite = "Death")
     {
-        if (sound != null) audioManager.PlayClip(sound);
         if (spriteController != null) spriteController.SetSprite(sprite);
         Destroy(gameObject, destroyDelay);        
     }
 
-    public void ExplodeAsync(string sound = null, string sprite = "Death", Action next = null)
+    public void ExplodeAsync(string sprite = "Death", Action next = null)
     {
-        if (sound != null) audioManager.PlayClip(sound);
         StartCoroutine(ExplosionCoroutine(sprite, next));
     }
 }

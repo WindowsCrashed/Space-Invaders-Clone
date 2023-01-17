@@ -7,7 +7,7 @@ public class BonusEnemyController : MonoBehaviour, IEnemyController
     [SerializeField] Score score;
     [SerializeField] Rigidbody2D rb2d;
     [SerializeField] SpriteController spriteController;
-    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioController audioController;
 
     public bool IsDead { get; private set; }
 
@@ -30,10 +30,7 @@ public class BonusEnemyController : MonoBehaviour, IEnemyController
     public void Die()
     {
         SetDead();
-
-        audioSource.clip = FindObjectOfType<AudioManager>().GetClip("BonusEnemyDeath").Clip;
-        audioSource.Play();
-        
+        audioController.PlayNext();       
         rb2d.Sleep();
         spriteController.AnimateAuto("Death");
         score.ScorePoints();

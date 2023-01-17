@@ -1,33 +1,23 @@
-using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] List<SoundClip> clips;
-
-    void Awake()
+    public void StopAllSources()
     {
-        foreach (SoundClip clip in clips)
-        {
-            clip.Source = gameObject.AddComponent<AudioSource>();
-            clip.Source.clip = clip.Clip;
-            clip.Source.volume = clip.Volume;
-            clip.Source.loop = clip.Loop;
-        }
+        FindObjectsOfType<AudioController>().ToList()
+            .ForEach(c => c.StopClip());
     }
 
-    public void PlayClip(string name)
+    public void PauseAllSources()
     {
-        clips.Find(c => c.Name == name)?.Source.Play();
+        FindObjectsOfType<AudioController>().ToList()
+            .ForEach(c => c.PauseClip());
     }
 
-    public void StopClip(string name)
+    public void ResumeAllSources()
     {
-        clips.Find(c => c.Name == name)?.Source.Stop();
-    }
-
-    public SoundClip GetClip(string name)
-    {
-        return clips.Find(c => c.Name == name);
+        FindObjectsOfType<AudioController>().ToList()
+            .ForEach(c => c.ResumeClip());
     }
 }
