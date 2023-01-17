@@ -18,12 +18,12 @@ public class AudioManager : MonoBehaviour
 
     public void PlayClip(string name)
     {
-        clips.Find(c => c.Name == name).Source.Play();
+        clips.Find(c => c.Name == name)?.Source.Play();
     }
 
     public void StopClip(string name)
     {
-        clips.Find(c => c.Name == name).Source.Stop();
+        clips.Find(c => c.Name == name)?.Source.Stop();
     }
 
     public SoundClip GetClip(string name)

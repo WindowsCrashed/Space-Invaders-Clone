@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] float restartDelay;
     [SerializeField] Spawner spawner;
     [SerializeField] SceneController sceneController;
+    [SerializeField] BackgroundTrackController backgroundTrackController;
 
     Coroutine respawnCoroutine;
 
@@ -66,6 +67,8 @@ public class GameManager : MonoBehaviour
     {
         TimeScaleController.FreezeGame();
 
+        backgroundTrackController.StopBackgroundTrack();
+
         if (respawnCoroutine != null)
         {
             StopCoroutine(respawnCoroutine);
@@ -76,7 +79,8 @@ public class GameManager : MonoBehaviour
     }
 
     void GameWon()
-    {     
+    {
+        backgroundTrackController.StopBackgroundTrack();
         StartCoroutine(ContinuePlayingCoroutine());
     }
 }
