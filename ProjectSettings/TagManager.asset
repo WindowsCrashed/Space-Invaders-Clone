@@ -15,7 +15,7 @@ TagManager:
   - UI
   - Enemy
   - Floor
-  - 
+  - Barrier
   - 
   - 
   - 
@@ -48,6 +48,9 @@ TagManager:
     locked: 0
   - name: Floor
     uniqueID: 410322989
+    locked: 0
+  - name: Barrier
+    uniqueID: 1090678967
     locked: 0
   - name: Enemy
     uniqueID: 3251172753

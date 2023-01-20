@@ -36,6 +36,6 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Credits menu
 - [x] Game start "animations"
 - [x] Sound
-- [ ] Barriers
+- [x] Barriers
 - [ ] Screen/camera adjustments for different devices
 - [ ] (Optional) Colors, multiplayer...
