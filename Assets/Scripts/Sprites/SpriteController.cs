@@ -29,6 +29,8 @@ public class SpriteController : MonoBehaviour
 
         SpriteObj sprite = sprites.Find(s => s.Name == name);
 
+        if (sprite == null) return;
+
         if (sprite.Position != Vector2.zero)
         {
             spriteRenderer.gameObject.transform.localPosition = sprite.Position;

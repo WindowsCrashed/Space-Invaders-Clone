@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4562747028013527934}
   - component: {fileID: 4562747028013527905}
-  m_Layer: 0
+  - component: {fileID: 6100334871147499445}
+  - component: {fileID: 1346758264801167380}
+  m_Layer: 8
   m_Name: Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,6 +61,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6100334871147499445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4562747028013527935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4e82923209b1f4ea1208d0866e1e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 4562747028257814264}
+  sprites:
+  - name: Destroy
+    sprite: {fileID: 0}
+    position: {x: 0, y: 0}
+  animations: []
+--- !u!114 &1346758264801167380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4562747028013527935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c86cf2c16c7a7848ad91171040889bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteController: {fileID: 6100334871147499445}
+  col2d: {fileID: 4562747028013527905}
 --- !u!1 &4562747028257814262
 GameObject:
   m_ObjectHideFlags: 0
