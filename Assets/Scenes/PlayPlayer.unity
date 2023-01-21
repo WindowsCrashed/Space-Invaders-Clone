@@ -409,6 +409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayPlayerCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3910927602295492829, guid: 321c24d069b89234fa4560f56c2cd49c, type: 3}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 1407039330}
     - target: {fileID: 5924954187809299568, guid: 321c24d069b89234fa4560f56c2cd49c, type: 3}
       propertyPath: sceneController
       value: 

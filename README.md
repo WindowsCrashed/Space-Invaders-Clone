@@ -37,5 +37,6 @@ Hope you like the code and enjoy the game once it's complete! :smile:
 - [x] Game start "animations"
 - [x] Sound
 - [x] Barriers
-- [ ] Screen/camera adjustments for different devices
+- [x] Screen/camera adjustments for different devices *(sort of)*
+- [ ] Make WebGL Build work
 - [ ] (Optional) Colors, multiplayer...

@@ -435,6 +435,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8901620734096469458, guid: 91d5b16f6bf3f6b4f89d2752bd760600, type: 3}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 1407039330}
     - target: {fileID: 246840523172472455, guid: 91d5b16f6bf3f6b4f89d2752bd760600, type: 3}
       propertyPath: sceneController
       value: 

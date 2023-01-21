@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 2898717482081206518}
   - component: {fileID: 31970711702975721}
   - component: {fileID: 1093896559717119450}
+  - component: {fileID: 3729143712909016688}
   m_Layer: 5
   m_Name: InsertCoinCanvas
   m_TagString: Untagged
@@ -528,6 +529,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70629432e5129694c868930c501a727d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3729143712909016688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7230275098192394895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7f856a87db48e4290bba4519d65db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCamera: {fileID: 0}
 --- !u!1 &7711387512540279496
 GameObject:
   m_ObjectHideFlags: 0
